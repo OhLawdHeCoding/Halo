@@ -10,7 +10,7 @@ function App() {
         <Homepage/>
       </div>
      {JSONDATA.map((val, key)=>{
-       return <div>{val.Product} {val.MeanC02}</div>
+       return <div>{val.Product} {val.MeanC02}{key.id}</div>
      })}
     </div>
   );
