@@ -9,9 +9,15 @@ function App() {
       <div className="homepagecontent">
         <Homepage/>
       </div>
-     {JSONDATA.map((val, key)=>{
-       return <div>{val.Product} {val.MeanC02}{key.id}</div>
-     })}
+      <table>
+        <tr>
+          <th>Product</th>
+          <th>CO2</th>
+        </tr>
+        {JSONDATA.map((val, key)=>{
+          return <tr><td>{val.Product}</td><td>{val.MeanC02}</td></tr>
+        })}
+      </table>
     </div>
   );
 }
