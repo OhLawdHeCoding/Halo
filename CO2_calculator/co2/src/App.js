@@ -4,16 +4,25 @@ import JSONDATA from './Data.json';
 import Homepage from './Components/Homepage';
 import Navbar from './Components/Navbar';
 import { useState } from 'react';
+import SearchBar from './Components/SearchBar';
+
+
 function App() {
   const [searchTerm, setSearchTerm] = useState("");
   return (
     <div className="App">
       <Navbar />
+      
       <div className="homepagecontent">
         <Homepage />
-      </div>
+
+        <SearchBar placeholder="Search..." />
+        
+        </div>
+
       <input type="text" placeholder="search" onChange={(event) => {
         setSearchTerm(event.target.value);
+
       }
       } />
       <table>
