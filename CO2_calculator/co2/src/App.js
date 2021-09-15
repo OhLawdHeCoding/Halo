@@ -1,18 +1,39 @@
+
 import './App.css';
 import JSONDATA from './Data.json';
 import Homepage from './Components/Homepage';
 import Navbar from './Components/Navbar';
+import { useState } from 'react';
 function App() {
+  const [searchTerm, setSearchTerm] = useState("");
   return (
     <div className="App">
-        <Navbar/>
+      <Navbar />
       <div className="homepagecontent">
-        <Homepage/>
+        <Homepage />
       </div>
-     {JSONDATA.map((val, key)=>{
-       return <div>{val.Product} {val.MeanC02}{key.id}</div>
-     })}
+      <table>
+        <tr>
+          <th>Product</th>
+          <th>CO2</th>
+        </tr>
+        {JSONDATA.map((val, key) => {
+          return <tr><td>{val.Product}</td><td>{val.MeanC02}</td></tr>
+        })}
+      </table>
+      <input type="text" placeholder="search" onChange={(event) => {
+        setSearchTerm(event.target.value);
+      }
+      } />
+      {JSONDATA.map((key, val) => {
+        return (
+          <div className="Product" key={key}>
+            <p>{val.Product}</p>
+          </div>
+        );
+      })}
     </div>
+
   );
 }
 
