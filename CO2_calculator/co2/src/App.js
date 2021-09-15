@@ -12,6 +12,10 @@ function App() {
       <div className="homepagecontent">
         <Homepage />
       </div>
+      <input type="text" placeholder="search" onChange={(event) => {
+        setSearchTerm(event.target.value);
+      }
+      } />
       <table>
         <tr>
           <th>Product</th>
@@ -21,10 +25,6 @@ function App() {
           return <tr><td>{val.Product}</td><td>{val.MeanC02}</td></tr>
         })}
       </table>
-      <input type="text" placeholder="search" onChange={(event) => {
-        setSearchTerm(event.target.value);
-      }
-      } />
       {JSONDATA.map((key, val) => {
         return (
           <div className="Product" key={key}>
