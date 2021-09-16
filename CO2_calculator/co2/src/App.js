@@ -7,15 +7,15 @@ import { useState } from 'react';
 import SearchBar from './Components/SearchBar';
 
 
+
 function App() {
-  
   return (
     <div className="App">
       <Navbar />
       
       <div className="homepagecontent">
         <Homepage />
-        <SearchBar placeholder="Search..." />
+        <SearchBar placeholder="Search..." data = {JSONDATA}/>
       </div>
     </div>
 

@@ -1,6 +1,6 @@
 import React from 'react'
-import JSONDATA from '../Data.json';
 import { useState } from 'react';
+import Databasebox from './Databasebox';
 
 function SearchBar({ placeholder, data }) {
     const [searchTerm, setSearchTerm] = useState("");
@@ -11,20 +11,14 @@ function SearchBar({ placeholder, data }) {
                         setSearchTerm(event.target.value);
                     }
                     } />
-                    <table>
-                        <tr>
-                        <th>Product</th>
-                        <th>CO2</th>
-                        </tr>
-                        {JSONDATA.filter((val)=>{
-                        if (searchTerm == ""){
-                            return val
-                        } else if (val.Product.toLowerCase().includes(searchTerm.toLowerCase()))
-                        return val
-                        }).map((val, key) => {
-                        return <tr className="Product" key={key}><td>{val.Product}</td><td>{val.MeanC02}</td></tr>
-                        })}
-                    </table>
+                    <Databasebox data={data.filter((val)=>{ //Databasebox takes the filtered data and displays it in a table
+                            if (searchTerm == ""){
+                                return val
+                            } else if (val.Product.toLowerCase().includes(searchTerm.toLowerCase()))
+                                return val
+                            })
+                        }
+                    />
                 <div className="searchIcon">  
              </div>   
             </div> 
