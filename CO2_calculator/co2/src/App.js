@@ -18,7 +18,7 @@ function App() {
 
         <SearchBar placeholder="Search..." />
         
-        </div>
+      </div>
 
       <input type="text" placeholder="search" onChange={(event) => {
         setSearchTerm(event.target.value);
@@ -30,17 +30,15 @@ function App() {
           <th>Product</th>
           <th>CO2</th>
         </tr>
-        {JSONDATA.map((val, key) => {
-          return <tr><td>{val.Product}</td><td>{val.MeanC02}</td></tr>
+        {JSONDATA.filter((val)=>{
+        if (searchTerm == ""){
+          return val
+        } else if (val.Product.toLowerCase().includes(searchTerm.toLowerCase()))
+        return val
+      }).map((val, key) => {
+          return <tr className="Product" key={key}><td>{val.Product}</td><td>{val.MeanC02}</td></tr>
         })}
       </table>
-      {JSONDATA.map((key, val) => {
-        return (
-          <div className="Product" key={key}>
-            <p>{val.Product}</p>
-          </div>
-        );
-      })}
     </div>
 
   );
