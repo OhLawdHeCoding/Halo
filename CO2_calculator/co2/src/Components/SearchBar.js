@@ -7,10 +7,14 @@ function SearchBar({ placeholder, data }) {
     return (
         <div className="search">          
             <div className="container"> 
+            
             <input type="text" placeholder={placeholder} onChange={(event) => {
                         setSearchTerm(event.target.value);
+                        
                     }
+                    
                     } />
+                   
                     <Databasebox data={data.filter((val)=>{ //Databasebox takes the filtered data and displays it in a table
                             if (searchTerm == ""){
                                 return val
@@ -19,8 +23,7 @@ function SearchBar({ placeholder, data }) {
                             })
                         }
                     />
-                <div className="searchIcon">  
-             </div>   
+                     <div className="searchIcon"> </div>       
             </div> 
             <div className="data"></div>
         </div>
