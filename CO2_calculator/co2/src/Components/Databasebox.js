@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import AddButton from './AddItemButton';
 
 
 function Databasebox({data}) {
@@ -19,7 +20,7 @@ function Databasebox({data}) {
                         <th>Tags</th>
                     </tr>
                         {data.map((val, key) => { 
-                            return <tr className="Product" key={key}><td>{val.Product}</td><td>{val.MeanC02}</td><td>{val.Tags}</td></tr>
+                            return <tr className="Product" key={key}><td>{val.Product} <AddButton/></td><td>{val.MeanC02}</td><td>{val.Tags}</td></tr>
                         })}
                     </table>
         </div>
