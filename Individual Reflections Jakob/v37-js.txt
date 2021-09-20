@@ -1,0 +1,12 @@
+	•	
+	Att programmera CSS har jag ingen erfarenhet av. Målet är att förbättra dom kunskaperna, vilket görs 		med tutorials och övrigt material på nätet och att testa sig fram. Jag vill även fortsätta lära mig om React-		programmering överlag vilket sker på samma sätt. 
+
+	•	
+	Att ta upp saker man lärt sig under sprinten på sprint reviews är ett bra sätt. Att skicka länkar och ha 		kontakt via discord. Kan göras oftare.  
+
+	•	
+	Deltog på gruppmöten med hela gruppen mån, fre och sön och under veckan hade jag och aziz två möten 		för att diskutera och jobba med våra user stories. 
+
+	•	
+	Min grupp skapade ett react project och la upp det i repository:t på github. Samt skapade 				grundkomponenter med väldigt basic kod för en första startsida till hemsidan. Det blev lite svårt att 		avgöra när en viss user story kunde anses vara färdig, så framöver kan man skriva mer detaljerade user 		stories eller åtminstone gå igenom dem mer. 
+
