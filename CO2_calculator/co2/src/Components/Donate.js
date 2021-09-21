@@ -1,5 +1,5 @@
 import React from 'react'
-import Picc from "../styling/Forest.jpg";
+import Picc from "../styling/aForest.jpg";
 import DonateButton from '../Components/DonateButton';
 import "../styling/Donate.css";
 
