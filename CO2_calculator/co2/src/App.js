@@ -1,4 +1,3 @@
-
 import './App.css';
 import JSONDATA from './Data.json';
 import Homepage from './Components/Homepage';

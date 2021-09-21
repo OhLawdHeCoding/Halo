@@ -1,5 +1,5 @@
 function DonateButton() {
-    const handleClick = () => {
+    const handleClick = () => { 
         window.open("http://wfp.org");
       };
 
@@ -11,7 +11,7 @@ function DonateButton() {
 
 }
 
-export default DonateButton
+export default DonateButton;
 
 
  
