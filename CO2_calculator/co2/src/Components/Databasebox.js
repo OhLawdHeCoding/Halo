@@ -16,6 +16,7 @@ function Databasebox({ data }) {
         */
         <div className="databasebox">
             <table>
+<<<<<<< HEAD
                 <tr>
                     <th>Product</th>
                     <th>CO2</th>
@@ -27,6 +28,17 @@ function Databasebox({ data }) {
                     </td><td>{val.MeanC02}</td><td>{val.Tags}</td></tr>
                 })}
             </table>
+=======
+                    <tr>
+                        <th>Product</th>
+                        <th>CO2</th>
+                        
+                    </tr>
+                        {data.map((val, key) => { 
+                            return <tr className="Product" key={key}><td>{val.Product} <AddButton/></td><td>{val.MeanC02}</td></tr>
+                        })}
+                    </table>
+>>>>>>> 79d4b8ec9e0e7834f27f7c0f9713d4f80e058a06
         </div>
     );
 }

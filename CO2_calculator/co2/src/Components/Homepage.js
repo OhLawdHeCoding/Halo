@@ -1,17 +1,15 @@
 import {useState} from 'react';
-import Infobox from './Infobox';
-import YourItemsbox from './YourItemsbox';
+import JSONDATA from '../Data.json';
 import Databasebox from './Databasebox'
+import SearchBar from '../Components/SearchBar';
 
 const Homepage = () => {
 
     return ( 
-        <div className="homepage">
-            <Infobox/>
-            <YourItemsbox/>
-        </div>
+        <div className="homepagecontent">
+        <SearchBar placeholder="Search..." data = {JSONDATA}/>
+      </div>
      );
 }
  
 export default Homepage;
-

@@ -4,10 +4,10 @@ const Infobox = () => {
 
     return ( 
         <div className="infobox">
+            <img src="/images/Forest.jpg" alt="" />   
             <h2>Towards a more sustainable future</h2>
-            <p>.....</p>
-            <a href="/AboutUs">About Us</a>
-{/*             <img src="/images/Forest.jpg" alt="" />*/}        
+            <p>More text here...</p>
+            <a href="/AboutUs">Learn more</a>   
             </div>
      );
 }
