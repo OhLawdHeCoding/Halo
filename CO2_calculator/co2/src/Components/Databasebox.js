@@ -1,8 +1,10 @@
-import {useState} from 'react';
 import AddButton from './AddItemButton';
+import React, { useState } from 'react';
 
 
-function Databasebox({data}) {
+
+function Databasebox({ data }) {
+    const [items, setItems] = React.useState([]);
     return (
         /*
         the <table> tag marks the start of the table. 
@@ -14,17 +16,19 @@ function Databasebox({data}) {
         */
         <div className="databasebox">
             <table>
-                    <tr>
-                        <th>Product</th>
-                        <th>CO2</th>
-                        <th>Tags</th>
-                    </tr>
-                        {data.map((val, key) => { 
-                            return <tr className="Product" key={key}><td>{val.Product} <AddButton/></td><td>{val.MeanC02}</td><td>{val.Tags}</td></tr>
-                        })}
-                    </table>
+                <tr>
+                    <th>Product</th>
+                    <th>CO2</th>
+                    <th>Tags</th>
+                </tr>
+                {data.map((val, key) => {
+                    return <tr className="Product" key={key}><td>{val.Product}
+                        <button onClick={() => setItems([...items, val.Product])}> add </button>
+                    </td><td>{val.MeanC02}</td><td>{val.Tags}</td></tr>
+                })}
+            </table>
         </div>
-     );
+    );
 }
 
 export default Databasebox;
