@@ -22,7 +22,7 @@ function Databasebox({ data }) {
                 </tr>
                 {data.map((val, key) => {
                     return <tr className="Product" key={key}><td>{val.Product}
-                        <button onClick={() => AddToItemBox(val)}> add </button>
+                        <AddButton/>
                     </td><td>{val.MeanC02}</td></tr>
                 })}
             </table>
