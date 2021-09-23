@@ -24,6 +24,16 @@ function Databasebox({ data }) {
                 </tr>
                 {items.map((val, key) => {
                     return <tr className="Product" key={key}><td>{val[0].Product}<button onClick={() => setItems(()=>{
+                        /*
+                        this decrament button sets the "items" array to a new value. It doesn't mutate "items", it sets it
+                        to a new value so that react visually updates the content. This is why I return [...Items] in some
+                        places. This creates a new array out of the destructed elements of the previous. It doesn't change
+                        anything, it just creates a new identical array.
+
+                        The "items" array is composed of [val, count] = [{Products, id, MeanCO2, tags[]}, count].
+                        When val[0] is referenced, we access the actual product data {Products, id, MeanCO2, tags[]}, 
+                        when val[1] is referenced, we access the count of the item.
+                        */
                         console.log("Decrement clicked...");
                         console.log("ID: "+val[0].id);
                         console.log("Product: "+val[0].Product);
