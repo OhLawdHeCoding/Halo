@@ -14,7 +14,7 @@ function Databasebox({ data }) {
         -In our table a map function maps over all products given to us in 
          this components function call and returns them within rows of cell datas.  
         */
-        <div>
+        <div className="boxes">
             <div className="itembox"> 
             <table>
                 <tr>
@@ -23,7 +23,24 @@ function Databasebox({ data }) {
                     <th>CO2 per kilo</th>
                 </tr>
                 {items.map((val, key) => {
-                    return <tr className="Product" key={key}><td>{val[0].Product}<button onClick={() => setItems(()=>{
+                    return <tr className="Product" key={key}><td>{val[0].Product}<button className="increment" onClick={() => setItems(()=>{
+                        console.log("Increment clicked...");
+                        console.log("ID: "+val[0].id);
+                        console.log("Product: "+val[0].Product);
+                        var index = items.findIndex(item => item[0].id === val[0].id)
+                        console.log("index: "+index);
+                        if (index === -1){
+                            console.log("added");
+                            return [...items, [val[0], 1]];
+                        }
+                        else {
+                            console.log("Pre inc: "+items[index][1]);
+                            items[index][1]+=1; //tror denna koden kör två ggr per klick. Konstigt dock att console loggarna inte gör det
+                            console.log("incremented to: "+items[index][1]);
+                            return [...items];
+                        }                       
+                    }
+                    )}> +1 </button><button className="decrament" onClick={() => setItems(()=>{
                         /*
                         this decrament button sets the "items" array to a new value. It doesn't mutate "items", it sets it
                         to a new value so that react visually updates the content. This is why I return [...Items] in some
@@ -54,24 +71,6 @@ function Databasebox({ data }) {
                         } else return [...items];                       
                     }
                     )}> -1 </button>
-                        <button onClick={() => setItems(()=>{
-                                console.log("Increment clicked...");
-                                console.log("ID: "+val[0].id);
-                                console.log("Product: "+val[0].Product);
-                                var index = items.findIndex(item => item[0].id === val[0].id)
-                                console.log("index: "+index);
-                                if (index === -1){
-                                    console.log("added");
-                                    return [...items, [val[0], 1]];
-                                }
-                                else {
-                                    console.log("Pre inc: "+items[index][1]);
-                                    items[index][1]+=1; //tror denna koden kör två ggr per klick. Konstigt dock att console loggarna inte gör det
-                                    console.log("incremented to: "+items[index][1]);
-                                    return [...items];
-                                }                       
-                            }
-                            )}> +1 </button>
                     </td><td>{((val[1]-1)/2)+1}</td><td>{val[0].MeanC02}</td></tr>
                 })}
             </table>
@@ -84,25 +83,25 @@ function Databasebox({ data }) {
                         <th>CO2</th>
                     </tr>
                     {data.map((val, key) => {
-                        return <tr className="Product" key={key}><td>{val.Product}
-                            <button onClick={() => setItems(()=>{
-                                    console.log("Add clicked...");
-                                    console.log("ID: "+val.id);
-                                    console.log("Product: "+val.Product);
-                                    var index = items.findIndex(item => item[0].id === val.id)
-                                    console.log("index: "+index);
-                                    if (index === -1){
-                                        console.log("added");
-                                        return [...items, [val, 1]];
-                                    }
-                                    else {
-                                        console.log("Pre inc: "+items[index][1]);
-                                        items[index][1]+=1; //tror denna koden kör två ggr per klick. Konstigt dock att console loggarna inte gör det
-                                        console.log("incremented to: "+items[index][1]);
-                                        return [...items];
-                                    }
-                                }
-                                )}> add </button>
+                        return <tr className="Product" key={key}><td><button className="addButton" onClick={() => setItems(()=>{
+                            console.log("Add clicked...");
+                            console.log("ID: "+val.id);
+                            console.log("Product: "+val.Product);
+                            var index = items.findIndex(item => item[0].id === val.id)
+                            console.log("index: "+index);
+                            if (index === -1){
+                                console.log("added");
+                                return [...items, [val, 1]];
+                            }
+                            else {
+                                console.log("Pre inc: "+items[index][1]);
+                                items[index][1]+=1; //tror denna koden kör två ggr per klick. Konstigt dock att console loggarna inte gör det
+                                console.log("incremented to: "+items[index][1]);
+                                return [...items];
+                            }
+                        }
+                        )}> {val.Product} </button>
+                            
                         </td><td>{val.MeanC02}</td></tr>
                     })}
                 </table>
