@@ -1,6 +1,6 @@
 import React from 'react'
 
-function AddItemButton(val, items, setItems) {
+function IncItemButton(val, items, setItems) {
   return (
     <button className="increment" onClick={() => setItems(()=>{
       console.log("Increment clicked...");
@@ -23,4 +23,4 @@ function AddItemButton(val, items, setItems) {
   );
 }
 
-export default AddItemButton;
+export default IncItemButton;

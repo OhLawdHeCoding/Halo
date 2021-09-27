@@ -1,5 +1,6 @@
-import AddItemButton from './AddItemButton';
-import RemoveItemButton from './RemoveItemButton';
+import IncItemButton from './Itembuttons/IncItemButton';
+import DecItemButton from './Itembuttons/DecItemButton';
+import AddItemButton from './Itembuttons/AddItemButton';
 import React, { useState } from 'react';
 
 
@@ -24,7 +25,7 @@ function Databasebox({ data }) {
                     <th>CO2 per kilo</th>
                 </tr>
                 {items.map((val, key) => {
-                    return <tr className="Product" key={key}><td>{val[0].Product}{AddItemButton(val, items, setItems)}{RemoveItemButton(val, items, setItems)}
+                    return <tr className="Product" key={key}><td>{val[0].Product}{IncItemButton(val, items, setItems)}{DecItemButton(val, items, setItems)}
                     </td><td>{((val[1]-1)/2)+1}</td><td>{val[0].MeanC02}</td></tr>
                 })}
             </table>
@@ -37,24 +38,7 @@ function Databasebox({ data }) {
                         <th>CO2</th>
                     </tr>
                     {data.map((val, key) => {
-                        return <tr className="Product" key={key}><td><button className="addButton" onClick={() => setItems(()=>{
-                            console.log("Add clicked...");
-                            console.log("ID: "+val.id);
-                            console.log("Product: "+val.Product);
-                            var index = items.findIndex(item => item[0].id === val.id)
-                            console.log("index: "+index);
-                            if (index === -1){
-                                console.log("added");
-                                return [...items, [val, 1]];
-                            }
-                            else {
-                                console.log("Pre inc: "+items[index][1]);
-                                items[index][1]+=1; //tror denna koden kör två ggr per klick. Konstigt dock att console loggarna inte gör det
-                                console.log("incremented to: "+items[index][1]);
-                                return [...items];
-                            }
-                        }
-                        )}> {val.Product} </button>
+                        return <tr className="Product" key={key}><td>{AddItemButton(val, items, setItems)}
                             
                         </td><td>{val.MeanC02}</td></tr>
                     })}

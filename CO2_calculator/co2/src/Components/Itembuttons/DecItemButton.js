@@ -1,6 +1,6 @@
 import React from 'react'
 
-function RemoveItemButton(val, items, setItems) {
+function DecItemButton(val, items, setItems) {
   return (
     <button className="decrament" onClick={() => setItems(()=>{
         /*
@@ -36,4 +36,4 @@ function RemoveItemButton(val, items, setItems) {
   );
 }
 
-export default RemoveItemButton;
+export default DecItemButton;
