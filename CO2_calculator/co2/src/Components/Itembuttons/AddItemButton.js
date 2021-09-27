@@ -22,9 +22,9 @@ function AddItemButton(val, items, setItems) {
       }
   }
   )}> Add </button>*/
-    val.PortionSizeButton.forEach(element => {
-      PortionSizeButton(val, items, setItems)
-    })
+  val.PortionSize.map((portion, key) => {
+      return <td className="Button" key={key}>{PortionSizeButton(portion, val, items, setItems)}</td>
+  })
     
   );
 }

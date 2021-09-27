@@ -1,6 +1,6 @@
 import React from 'react'
 
-function IncItemButton(val, items, setItems) {
+function IncItemButton(portion, val, items, setItems) {
   return (
     <button className="increment" onClick={() => setItems(()=>{
       console.log("Increment clicked...");
