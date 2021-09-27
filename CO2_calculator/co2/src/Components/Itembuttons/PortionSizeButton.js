@@ -20,13 +20,14 @@ function PortionSizeButton(_portion, _val, items, setItems) {
                 return [...items];
             }
             else{
-            var oldAmount = items[itemsIndex].portions[portionIndex].amount; //items[{val, [{PortionSize, ->COUNT<-}]}]
-            console.log("Pre inc: "+oldAmount);
-            var newAmount = oldAmount+_portion.grams/2; //tror denna koden kör två ggr per klick. Konstigt dock att console loggarna inte gör det
-            var newItem = {portion:_portion, amount:newAmount};
-            items[itemsIndex].portions[portionIndex] = newItem;
-            console.log("incremented to: "+newAmount);
-            return [...items];
+                console.log(items[itemsIndex].portions[portionIndex]);
+                var oldAmount = items[itemsIndex].portions[portionIndex].amount; //items[{val, [{PortionSize, ->COUNT<-}]}]
+                console.log("Pre inc: "+oldAmount);
+                var newAmount = oldAmount+_portion.grams/2; //tror denna koden kör två ggr per klick. Konstigt dock att console loggarna inte gör det
+                var newItem = {portion:_portion, amount:newAmount};
+                items[itemsIndex].portions[portionIndex] = newItem;
+                console.log("incremented to: "+newAmount);
+                return [...items];
             }
         }
     }
