@@ -10,7 +10,7 @@ function PortionSizeButton(portion, val, items, setItems) {
         console.log("index: "+index);
         if (index === -1){
             console.log("added");
-            return [...items, [val, portion.grams/1000]];
+            return [...items, [val, portion.grams/1000*2]];
         }
         else {
             
