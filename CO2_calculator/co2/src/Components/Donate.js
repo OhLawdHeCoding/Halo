@@ -1,5 +1,5 @@
 import React from 'react'
-import Picc from "../styling/aForest.jpg";
+import Pic from "../styling/aForest.jpg";
 import DonateButton from '../Components/DonateButton';
 import "../styling/Donate.css";
 
@@ -9,7 +9,7 @@ function Donate() {
         <div className="donate">
         <div
           className="donateTop"
-          style={{ background: `url(${Picc})` }}
+          style={{ backgroundImage: `url(${Pic})` }}
         ></div>
         <div className="donateBottom">
           <h1> Donate </h1>

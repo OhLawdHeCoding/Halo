@@ -22,6 +22,7 @@ function App() {
         <Route path='/' exact component={Homepage}/>
         <Route path='/about' exact component={About}/>
         <Route path='/donate' exact component={Donate}/>
+        <Route path='/home' exact component={Homepage}/>
       </Switch>
       </Router>
       
