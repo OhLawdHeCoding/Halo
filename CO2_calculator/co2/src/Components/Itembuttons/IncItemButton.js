@@ -1,25 +1,31 @@
 import React from 'react'
 
-function IncItemButton(val, items, setItems) {
+function IncItemButton(_portionItem, _item, items, setItems) {
   return (
-    <button className="increment" onClick={() => setItems(()=>{
-      console.log("Increment clicked...");
-      console.log("ID: "+val[0].id);
-      console.log("Product: "+val[0].Product);
-      var index = items.findIndex(item => item[0].id === val[0].id)
-      console.log("index: "+index);
-      if (index === -1){
-          console.log("added");
-          return [...items, [val[0], 1]];
-      }
-      else {
-          console.log("Pre inc: "+items[index][1]);
-          items[index][1]+=1; //tror denna koden kör två ggr per klick. Konstigt dock att console loggarna inte gör det
-          console.log("incremented to: "+items[index][1]);
-          return [...items];
-      }                       
+    <button className="IncButton" onClick={() => setItems(()=>{
+      console.log("Inc clicked...");
+      console.log("ID: "+_item.val.id);
+      console.log("Product: "+_item.val.Product);
+      console.log("Portion: "+_portionItem.portion.name);
+      var itemsIndex = items.findIndex(item => item.val.id === _item.val.id)
+      console.log("itemsIndex: "+itemsIndex);
+      
+      var portionIndex = items[itemsIndex].portions.findIndex(portionItem => portionItem.portion.name == _portionItem.portion.name);
+      if (portionIndex!=-1){ //the function executes twice, bug?
+      console.log("portionIndex: "+portionIndex);
+      console.log(items[itemsIndex].portions);
+      var oldAmount = items[itemsIndex].portions[portionIndex].amount; //items[{val, [{PortionSize, ->COUNT<-}]}]
+      console.log("Pre dec: "+oldAmount);          
+      var newAmount = oldAmount+_portionItem.portion.grams/2; //tror denna koden kör två ggr per klick. Konstigt dock att console loggarna inte gör det
+      var newItem = {portion:_portionItem.portion, amount:newAmount};
+      items[itemsIndex].portions[portionIndex] = newItem;
+      console.log("decremented to: "+newAmount);
+      return [...items];
+        
+    }
+       
   }
-  )}> +1 </button>
+  )}>+</button>
   );
 }
 

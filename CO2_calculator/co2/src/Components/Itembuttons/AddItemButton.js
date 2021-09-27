@@ -1,11 +1,13 @@
 import React from 'react'
+import PortionSizeButton from './PortionSizeButton'
 
 function AddItemButton(val, items, setItems) {
-  return (
+  return (/*
     <button className="addButton" onClick={() => setItems(()=>{
       console.log("Add clicked...");
       console.log("ID: "+val.id);
       console.log("Product: "+val.Product);
+      console.log("PortionSizes: "+val.PortionSize[0].name);
       var index = items.findIndex(item => item[0].id === val.id)
       console.log("index: "+index);
       if (index === -1){
@@ -19,7 +21,12 @@ function AddItemButton(val, items, setItems) {
           return [...items];
       }
   }
-  )}> {val.Product} </button>
+  )}> Add </button>*/
+  
+  val.PortionSize.map((portion, key) => {
+      return <div className="addButton"><td className="buttonCell" key={key}>{PortionSizeButton(portion, val, items, setItems)}</td></div>
+  })
+    
   );
 }
 
