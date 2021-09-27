@@ -7,6 +7,10 @@ import React, { useState } from 'react';
 
 function Databasebox({ data }) {
     const [items, setItems] = React.useState([]);
+    /*items:[
+        {val:val, portions:[{portion, amount}]}
+    ]//val is product: {Pruduct, MeanC02, id, PortionSize}
+    */
     return (
         /*
         the <table> tag marks the start of the table. 
@@ -21,12 +25,11 @@ function Databasebox({ data }) {
             <table>
                 <tr>
                     <th>Product</th>
-                    <th>Amount (KG)</th>
                     <th>CO2 per kilo</th>
                 </tr>
-                {items.map((val, key) => {
-                    return <tr className="Product" key={key}><td>{val[0].Product}{IncItemButton(val, items, setItems)}{DecItemButton(val, items, setItems)}
-                    </td><td>{Math.round(val[1]/2*1000)/1000}</td><td>{val[0].MeanC02}</td></tr>
+                {items.map((item, key) => {
+                    return <tr className="Product" key={key}><td>{item.val.Product}
+                    <ul>{item.portions.map((portionItem, key)=>{return <li>{portionItem.portion.name}{IncItemButton(item, items, setItems)}{DecItemButton(item, items, setItems)}</li>})}</ul></td><td>{item.val.MeanC02}</td></tr>
                 })}
             </table>
             </div>
