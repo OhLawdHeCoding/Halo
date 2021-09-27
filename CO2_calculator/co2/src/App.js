@@ -9,6 +9,7 @@ import DonateButton from './Components/DonateButton';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import About from './Components/About';
 import Donate from './Components/Donate';
+import Popup from './Components/Popup';
 
 
 
@@ -25,6 +26,8 @@ function App() {
         <Route path='/home' exact component={Homepage}/>
       </Switch>
       </Router>
+
+      <Popup />
       
 
     
