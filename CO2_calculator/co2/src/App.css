@@ -45,14 +45,16 @@ div.container input[type=text]{
 
 div.boxes button {
   float: right;
-  font-size: 16px;
+  font-size: 10px;
 }
-button.addButton{
-  
+div.addButton td{
+  float: right;
+}
+div.addButton button{
+  float: right;
+  font-size: 16px;
   height: 40px;
 }
-
-
 div.itembox table {
   font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
