@@ -29,7 +29,7 @@ function Databasebox({ data }) {
                 </tr>
                 {items.map((item, key) => {
                     return <tr className="Product" key={key}><td>{item.val.Product}
-                    <ul>{item.portions.map((portionItem, key)=>{return <li>{portionItem.portion.name}{IncItemButton(item, items, setItems)}{DecItemButton(item, items, setItems)}</li>})}</ul></td><td>{item.val.MeanC02}</td></tr>
+                    <ul>{item.portions.map((portionItem, key)=>{return <li>{portionItem.amount/portionItem.portion.grams}{" x "+portionItem.portion.name}{IncItemButton(item, items, setItems)}{DecItemButton(item, items, setItems)}</li>})}</ul></td><td>{item.val.MeanC02}</td></tr>
                 })}
             </table>
             </div>
