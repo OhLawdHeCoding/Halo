@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "../styling/Popup.css";
 
+
+
 export default function Popup() {
   const [popup, setPopup] = useState(false);
 
@@ -17,7 +19,7 @@ export default function Popup() {
   return (
     <>
       <button onClick={togglePopup} className="btn-popup">
-        Help
+        Help  
       </button>
 
       {popup && (

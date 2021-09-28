@@ -3,18 +3,18 @@ body.active-popup {
 }
 
 .btn-popup {
-    padding: 10px 20px;
+    padding: 10px 5px;
     color: white; 
     display: block;
     margin: 100px auto 0;
     font-size: 18px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 50%;
     box-shadow: 0px 2px 2px lightgray;
     background-color: #FFC107;
     position: absolute;
     top: 8%;
-    right: 850px;
+    right: 830px;
     transition: ease background-color 250ms; 
     
 }
@@ -22,6 +22,8 @@ body.active-popup {
 .btn-popup:hover {
     background-color: #4dca9c;
 }
+
+
 
 
 .popup, .overlay {
