@@ -46,20 +46,12 @@ function DecItemButton(_portionItem, _item, items, setItems) {
       console.log("portionIndex: "+portionIndex);
       console.log(items[itemsIndex].portions);
       var oldAmount = items[itemsIndex].portions[portionIndex].amount; //items[{val, [{PortionSize, ->COUNT<-}]}]
-      if (oldAmount == 1){
-          console.log(items[itemsIndex].portions);
-          items[itemsIndex].portions.splice(portionIndex, 1);
-          return [...items];
-      }
-      else{
-        
       console.log("Pre dec: "+oldAmount);          
       var newAmount = oldAmount-_portionItem.portion.grams/2; //tror denna koden kör två ggr per klick. Konstigt dock att console loggarna inte gör det
       var newItem = {portion:_portionItem.portion, amount:newAmount};
       items[itemsIndex].portions[portionIndex] = newItem;
       console.log("decremented to: "+newAmount);
-      return [...items];
-      }  
+      return [...items];  
     }
        
   }

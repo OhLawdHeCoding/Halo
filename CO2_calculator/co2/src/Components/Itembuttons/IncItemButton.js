@@ -19,7 +19,7 @@ function IncItemButton(_portionItem, _item, items, setItems) {
       var newAmount = oldAmount+_portionItem.portion.grams/2; //tror denna koden kör två ggr per klick. Konstigt dock att console loggarna inte gör det
       var newItem = {portion:_portionItem.portion, amount:newAmount};
       items[itemsIndex].portions[portionIndex] = newItem;
-      console.log("decremented to: "+newAmount);
+      console.log("incremented to: "+newAmount);
       return [...items];
         
     }
