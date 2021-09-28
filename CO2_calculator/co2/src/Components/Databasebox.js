@@ -27,11 +27,11 @@ function Databasebox({ data }) {
                     <th>Product</th>
                     <th>CO2 per kilo</th>
                 </tr>
-                {items.filter(i => ()=>{
-                    var all = true;
+                {items.filter((i)=>{
+                    var all = false;
                     i.portions.forEach(element => {
-                    all = (all&&(element.amount>0)) //funkar ej än, wip
-                }); return all}).map((item, key) => {
+                        all |= element.amount>0;
+                    }); return all}).map((item, key) => {
                     return <tr className="Product" key={key}><td>{item.val.Product + item.portions.length}
                     <ul>{item.portions.filter(p => p.amount>0).map((portionItem, key)=>{return <li key={key}>{portionItem.amount/portionItem.portion.grams}{" x "+portionItem.portion.name}
                     {IncItemButton(portionItem, item, items, setItems)}{DecItemButton(portionItem, item, items, setItems)}</li>})}</ul></td><td>{item.val.MeanC02}</td></tr>
