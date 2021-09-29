@@ -10,6 +10,7 @@ function Databasebox({ data }) {
     /*items:[
         {val:val, portions:[{portion, amount}]}
     ]//val is product: {Pruduct, MeanC02, id, PortionSize}
+    //portion: {name, grams}
     */
     return (
         /*
@@ -32,7 +33,7 @@ function Databasebox({ data }) {
                     i.portions.forEach(element => {
                         all |= element.amount>0;
                     }); return all}).map((item, key) => {
-                    return <tr className="Product" key={key}><td>{item.val.Product + item.portions.length}
+                    return <tr className="Product" key={key}><td>{item.val.Product}
                     <ul>{item.portions.filter(p => p.amount>0).map((portionItem, key)=>{return <li key={key}>{portionItem.amount/portionItem.portion.grams}{" x "+portionItem.portion.name}
                     {IncItemButton(portionItem, item, items, setItems)}{DecItemButton(portionItem, item, items, setItems)}</li>})}</ul></td><td>{item.val.MeanC02}</td></tr>
                 })}
