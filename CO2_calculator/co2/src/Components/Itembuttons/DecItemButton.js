@@ -33,29 +33,29 @@ function DecItemButton(_portionItem, _item, items, setItems) {
         } else return [...items];                       
     }
     )}> -1 </button>*/
-    <button className="DecButton" onClick={() => setItems(()=>{
+    <button className="DecButton" onClick={() => setItems(() => {
       console.log("Dec clicked...");
-      console.log("ID: "+_item.val.id);
-      console.log("Product: "+_item.val.Product);
-      console.log("Portion: "+_portionItem.portion.name);
+      console.log("ID: " + _item.val.id);
+      console.log("Product: " + _item.val.Product);
+      console.log("Portion: " + _portionItem.portion.name);
       var itemsIndex = items.findIndex(item => item.val.id === _item.val.id)
-      console.log("itemsIndex: "+itemsIndex);
-      
+      console.log("itemsIndex: " + itemsIndex);
+
       var portionIndex = items[itemsIndex].portions.findIndex(portionItem => portionItem.portion.name == _portionItem.portion.name);
-      if (portionIndex!=-1){ //the function executes twice, bug?
-      console.log("portionIndex: "+portionIndex);
-      console.log(items[itemsIndex].portions);
-      var oldAmount = items[itemsIndex].portions[portionIndex].amount; //items[{val, [{PortionSize, ->COUNT<-}]}]
-      console.log("Pre dec: "+oldAmount);          
-      var newAmount = oldAmount-_portionItem.portion.grams/2; //tror denna koden kör två ggr per klick. Konstigt dock att console loggarna inte gör det
-      var newItem = {portion:_portionItem.portion, amount:newAmount};
-      items[itemsIndex].portions[portionIndex] = newItem;
-      console.log("decremented to: "+newAmount);
-      return [...items];  
+      if (portionIndex != -1) { //safe-guard mot att funktionen executar 2 ggr.
+        console.log("portionIndex: " + portionIndex);
+        console.log(items[itemsIndex].portions);
+        var oldAmount = items[itemsIndex].portions[portionIndex].amount; //items[{val, [{PortionSize, ->COUNT<-}]}]
+        console.log("Pre dec: " + oldAmount);
+        var newAmount = oldAmount - _portionItem.portion.grams / 2; //tror denna koden kör två ggr per klick. Konstigt dock att console loggarna inte gör det
+        var newItem = { portion: _portionItem.portion, amount: newAmount };
+        items[itemsIndex].portions[portionIndex] = newItem;//jag decrementerar en kopia av itemet och ersätter den med det gamla.
+        console.log("decremented to: " + newAmount);
+        return [...items];
+      }
+
     }
-       
-  }
-  )}>-</button>
+    )}>-</button>
   );
 }
 
