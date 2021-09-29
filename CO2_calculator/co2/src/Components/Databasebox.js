@@ -22,25 +22,28 @@ function Databasebox({ data }) {
          this components function call and returns them within rows of cell datas.  
         */
         <div className="boxes">
-            <div className="itembox"> 
-            <table>
-                <tr>
-                    <th>Product</th>
-                    <th>CO2 per kilo</th>
-                </tr>
-                {items.filter((i)=>{
-                    var all = false;
-                    i.portions.forEach(element => {
-                        all |= element.amount>0;
-                    }); return all}).map((item, key) => {
-                    return <tr className="Product" key={key}><td>{item.val.Product}
-                    <ul>{item.portions.filter(p => p.amount>0).map((portionItem, key)=>{return <li key={key}>{portionItem.amount/portionItem.portion.grams}{" x "+portionItem.portion.name}
-                    {IncItemButton(portionItem, item, items, setItems)}{DecItemButton(portionItem, item, items, setItems)}</li>})}</ul></td><td>{item.val.MeanC02}</td></tr>
-                })}
-            </table>
+            <div className="itembox">
+                <table>
+                    <tr>
+                        <th>Product</th>
+                        <th>CO2 per kilo</th>
+                    </tr>
+                    {items.filter((i) => {
+                        var all = false;
+                        i.portions.forEach(element => {
+                            all |= element.amount > 0;
+                        }); return all
+                    }).map((item, key) => {
+                        return <tr className="Product" key={key}><td>{item.val.Product}
+                            <ul>{item.portions.filter(p => p.amount > 0).map((portionItem, key) => {
+                                return <li key={key}>{portionItem.amount / portionItem.portion.grams}{" x " + portionItem.portion.name}
+                                    {IncItemButton(portionItem, item, items, setItems)}{DecItemButton(portionItem, item, items, setItems)}</li>
+                            })}</ul></td><td>{item.val.MeanC02}</td></tr>
+                    })}
+                </table>
             </div>
             <div className="databasebox">
-                
+
                 <table>
                     <tr>
                         <th>Product</th>
@@ -48,7 +51,7 @@ function Databasebox({ data }) {
                     </tr>
                     {data.map((val, key) => {
                         return <tr className="Product" key={key}><td>{val.Product}{AddItemButton(val, items, setItems)}
-                            
+
                         </td><td>{val.MeanC02}</td></tr>
                     })}
                 </table>
