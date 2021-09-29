@@ -1,0 +1,16 @@
+	•	
+	Jag vill fortsätta förbättra mina kunskaper om html,css och react-programmering.
+  Därför så ska jag fortsätta uppdatera mig på vad de andra i gruppen gör för
+  uppdateringar i projektet och fortsätta hitta mer information online. 
+	•	
+	Bidrar bäst genom regelbunden kontakt med gruppen och att jag delar med mig av 
+  info jag hittar online. En annan sak som skulle kunna hjälpa är mer pair-programming
+  via discord för ännu mer samarbete och mer delaktighet. 
+	•	
+	Deltog på mötena och höll kontakt i gruppchatten, men det kan ske mer frekvent.
+  En av veckans tasks hann ej bli klar och då kunde vi ha hört om någon annan var
+  klar med sina uppgifter och frågat om hjälp, vilket ska ske om liknande situation uppstår framöver. 
+	•	
+	Jag och Aziz jobbade med startsidans utseende och struktur där vi i slutändan
+  valde designen som Aziz gjorde. Rent kodmässigt bidrog jag inget i slutändan men vi
+  samarbetade inom gruppen på så sätt att vi delade länkar och olika idéer på lösningar i chatten.
