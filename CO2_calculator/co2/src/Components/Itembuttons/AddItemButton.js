@@ -14,11 +14,13 @@ function AddItemButton(val, items, setItems) {
   return (
     <div>
       <div className="customAddButton">
-        <input type="text" placeholder="customValue" onChange={(event) => {
-          //skapar direkt en portion utav texten i textfältet och sparar med setCustom
-          var _portion = { name: event.target.value, grams: parseInt(event.target.value) }
-          setCustom(_portion);
-        }} />
+        <div className="customPortion">
+          <input type="text" placeholder="customValue" onChange={(event) => {
+            //skapar direkt en portion utav texten i textfältet och sparar med setCustom
+            var _portion = { name: event.target.value, grams: parseInt(event.target.value) }
+            setCustom(_portion);
+          }} />
+        </div>
       </div>
       <div>
         {[...val.PortionSize, custom].filter((p) => { if (p.name != "") return true; return false }).map((portion, key) => {

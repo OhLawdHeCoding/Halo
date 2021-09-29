@@ -28,14 +28,24 @@ function Databasebox({ data }) {
                         <th>Product</th>
                         <th>CO2 per kilo</th>
                     </tr>
-                    {items.filter((i) => {
-                        var all = false;
+                    {items.filter((i) => {//denna funktionen kolla returnerar endast de items 
+                        var all = false;//som har en portion med amount>1 
                         i.portions.forEach(element => {
                             all |= element.amount > 0;
                         }); return all
                     }).map((item, key) => {
+                        /*
+                        efter att vi filtrerat bort alla items som saknar portions 
+                        så itererar vi över dem och returnerar en rad som innehåller
+                        diverse annat material, se fortsättning
+                        */
                         return <tr className="Product" key={key}><td>{item.val.Product}
                             <ul>{item.portions.filter(p => p.amount > 0).map((portionItem, key) => {
+                                /*
+                                För varje val, item, ex "Wheat" itererar vi över dess tillagda portioner.
+                                Portioner med amount <=0 sorteras bort. Varje portion returnerar ett list item "<li>"
+                                som innehåller vad portionen heter samt en inc/dec-knapp
+                                */
                                 return <li key={key}>{portionItem.amount / portionItem.portion.grams}{" x " + portionItem.portion.name}
                                     {IncItemButton(portionItem, item, items, setItems)}{DecItemButton(portionItem, item, items, setItems)}</li>
                             })}</ul></td><td>{item.val.MeanC02}</td></tr>
