@@ -39,7 +39,7 @@ function Databasebox({ data }) {
                     }); return all}).map((item, key) => {
                     return <tr className="Product" key={key}><td>{item.val.Product}
                     <ul>{item.portions.filter(p => p.amount>0).map((portionItem, key)=>{return <li key={key}>{portionItem.amount/portionItem.portion.grams}{" x "+portionItem.portion.name}
-                    {IncItemButton(portionItem, item, items, setItems)}{DecItemButton(portionItem, item, items, setItems)}</li>})}</ul></td><td>{item.val.MeanC02}</td></tr>
+                    {IncItemButton(portionItem, item, items, setItems)}{DecItemButton(portionItem, item, items, setItems)}</li>})}</ul></td><td>{<font color={("hsl("+(item.val.MeanC02)+", 100%, 50%)")}>{item.val.MeanC02}</font>}</td></tr>
                 })}
             </table>
             </div>
