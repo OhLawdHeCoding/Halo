@@ -2,6 +2,7 @@ import IncItemButton from './Itembuttons/IncItemButton';
 import DecItemButton from './Itembuttons/DecItemButton';
 import AddItemButton from './Itembuttons/AddItemButton';
 import React, { useState } from 'react';
+import TotalEmissions from './TotalEmissions';
 
 
 
@@ -24,6 +25,9 @@ function Databasebox({ data }) {
         <div className="boxes">
             <div className="itembox"> 
             <table>
+                <tr>
+                    <th colspan="2">Totalt: {TotalEmissions(items)} </th>
+                </tr>
                 <tr>
                     <th>Product</th>
                     <th>CO2 per kilo</th>
