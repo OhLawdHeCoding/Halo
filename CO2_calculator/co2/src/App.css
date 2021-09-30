@@ -42,6 +42,12 @@ div.container input[type=text]{
   margin: 8px 0;
   box-sizing: border-box;
 }
+div.customPortion input[type=text]{
+  width: 30%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  float: left;
+}
 
 div.boxes button {
   float: right;
@@ -71,6 +77,9 @@ div.databasebox table {
 table td, table th {
   border: 1px solid #ddd;
   padding: 8px;
+}
+div.databasebox table td {
+  padding: 0px;
 }
 div.databasebox table td {
   padding: 0px;

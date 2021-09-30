@@ -13,8 +13,8 @@ body.active-popup {
     box-shadow: 0px 2px 2px lightgray;
     background-color: #FFC107;
     position: absolute;
-    top: 8%;
-    right: 830px;
+    right: 66%;
+    top: 45px;
     transition: ease background-color 250ms; 
     
 }
