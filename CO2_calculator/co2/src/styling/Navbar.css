@@ -1,6 +1,6 @@
 .navbar {
     width: 100%;
-    height: 100px;
+    height: 60px;
     background-color: #121619;
     display: flex;
     flex-direction: row;
@@ -99,4 +99,14 @@
     .hiddenLinks {
       display: none;
     }
+  }
+
+  .navbar a {
+    padding: 5px 15px;;
+    border-radius: 10px;
+    transition: ease background-color 250ms;
+  }
+
+  .navbar a:hover {
+    background-color: #4f615a7c;
   }
