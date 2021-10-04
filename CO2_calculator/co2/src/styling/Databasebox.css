@@ -1,0 +1,68 @@
+div.container input[type=text]{
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+  div.customPortion input[type=text]{
+    width: 30%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    float: left;
+  }
+  
+  div.boxes button {
+    float: right;
+    font-size: 10px;
+  }
+  div.addButton td{
+    float: right;
+  }
+  div.addButton button{
+    float: right;
+    font-size: 16px;
+    height: 40px;
+  }
+  div.itembox table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+    float: right;
+  }
+  div.databasebox table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+    float: left;
+  }
+  
+  table td, table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  div.databasebox table td {
+    padding: 0px;
+  }
+  div.databasebox table td {
+    padding: 0px;
+  }
+  
+  table tr:nth-child(even){background-color: #f2f2f2;}
+  
+  div.itembox table tr:hover {background-color: #ddd;}
+  div.databasebox table tr:hover {background-color: #4dca9c;}
+  
+  div.itembox table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #008553;
+    color: white;
+  }
+  div.databasebox table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+  }

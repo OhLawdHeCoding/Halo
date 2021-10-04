@@ -3,7 +3,7 @@ import DecItemButton from './Itembuttons/DecItemButton';
 import AddItemButton from './Itembuttons/AddItemButton';
 import React, { useState } from 'react';
 import TotalEmissions from './TotalEmissions';
-
+import "../styling/Databasebox.css";
 
 
 function Databasebox({ data }) {
