@@ -3,6 +3,7 @@ import DecItemButton from './Itembuttons/DecItemButton';
 import AddItemButton from './Itembuttons/AddItemButton';
 import React, { useState } from 'react';
 import TotalEmissions from './TotalEmissions';
+import dispCO2 from './DisplayCO2';
 import "../styling/Databasebox.css";
 
 
@@ -24,7 +25,7 @@ function Databasebox({ data }) {
         */
         <div className="boxes">
             <div className="itembox"> 
-            <table>
+            <table className = "itemboxTable">
                 <tr>
                     <th colspan="2">Totalt: {TotalEmissions(items)} </th>
                 </tr>
@@ -39,7 +40,7 @@ function Databasebox({ data }) {
                     }); return all}).map((item, key) => {
                     return <tr className="Product" key={key}><td>{item.val.Product}
                     <ul>{item.portions.filter(p => p.amount>0).map((portionItem, key)=>{return <li key={key}>{portionItem.amount/portionItem.portion.grams}{" x "+portionItem.portion.name}
-                    {IncItemButton(portionItem, item, items, setItems)}{DecItemButton(portionItem, item, items, setItems)}</li>})}</ul></td><td>{<font color={("hsl("+(item.val.MeanC02)+", 100%, 50%)")}>{item.val.MeanC02}</font>}</td></tr>
+                    {IncItemButton(portionItem, item, items, setItems)}{DecItemButton(portionItem, item, items, setItems)}</li>})}</ul></td><td className="MeanCO2" >{dispCO2(item.val.MeanC02)}</td></tr>
                 })}
             </table>
             </div>

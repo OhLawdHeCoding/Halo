@@ -8,7 +8,8 @@ AddItemButton har två huvudsakliga uppgifter:
 */
 
 function AddItemButton(val, items, setItems) {
-  const [custom, setCustom] = React.useState({ name: "", grams: "0" });
+  const custom = { name: "", grams: "0" };
+  //const [custom, setCustom] = React.useState({ name: "", grams: "0" });
   //För att hålla koll på vad som står i textfältet använder jag ett state^
   //Defualt är en portion som inte har något namn och väger 0 gram
   return (
@@ -18,7 +19,7 @@ function AddItemButton(val, items, setItems) {
           <input type="text" placeholder="customValue" onChange={(event) => {
             //skapar direkt en portion utav texten i textfältet och sparar med setCustom
             var _portion = { name: event.target.value, grams: parseInt(event.target.value) }
-            setCustom(_portion);
+            //setCustom(_portion);
           }} />
         </div>
       </div>
