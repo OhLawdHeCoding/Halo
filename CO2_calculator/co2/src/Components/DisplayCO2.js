@@ -2,19 +2,19 @@ import React from 'react'
 
 function dispCO2(CO2) {
     var co2 = parseInt(CO2);
-    if (co2>100)
+    if (co2>50)
         return (
             <div style={{color: "red"}}>
                 {CO2}
             </div>
         );
-    if (co2>20)
+    if (co2>10)
         return (
             <div style={{color: "orange"}}>
                 {CO2}
             </div>
         );
-    if (co2<=50)
+    if (co2<=10)
         return (
             <div style={{color: "green"}}>
                 {CO2}
