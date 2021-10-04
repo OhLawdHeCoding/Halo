@@ -1,5 +1,5 @@
 import React from "react";
-import Pic from "../styling/aForest.jpg";
+import Pic from "../assets/aForest.jpg";
 import "../styling/About.css";
 
 function About() {
