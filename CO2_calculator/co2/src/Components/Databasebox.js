@@ -54,7 +54,7 @@ function Databasebox({ data }) {
                     {data.map((val, key) => {
                         return <tr className="Product" key={key}><td>{val.Product}{AddItemButton(val, items, setItems)}
                             
-                        </td><td>{val.MeanC02}</td></tr>
+                        </td><td>{dispCO2(val.MeanC02)}</td></tr>
                     })}
                 </table>
             </div>
