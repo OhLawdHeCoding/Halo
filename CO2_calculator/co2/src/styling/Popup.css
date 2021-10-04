@@ -6,7 +6,7 @@ body.active-popup {
     padding: 10px 5px;
     color: white; 
     display: block;
-    margin: 100px auto 0;
+    margin: 68px auto 0;
     font-size: 18px;
     cursor: pointer;
     border-radius: 50%;
@@ -14,7 +14,7 @@ body.active-popup {
     background-color: #FFC107;
     position: absolute;
     right: 66%;
-    top: 45px;
+    top: 0px;
     transition: ease background-color 250ms; 
     
 }
