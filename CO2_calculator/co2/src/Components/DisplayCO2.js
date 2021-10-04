@@ -8,7 +8,7 @@ function dispCO2(CO2) {
                 {CO2}
             </div>
         );
-    if (co2>50)
+    if (co2>20)
         return (
             <div style={{color: "orange"}}>
                 {CO2}
