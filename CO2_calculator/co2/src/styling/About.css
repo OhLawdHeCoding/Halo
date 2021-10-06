@@ -43,5 +43,16 @@
     width: 300px;
   }
 
+  .aboutTop {
+    height: 30%;
+  
+  }
+
+  .about .aboutBottom h1 {
+    font-size: 50px;
+    height: 10px;
+    
+  }
+
  
 }
