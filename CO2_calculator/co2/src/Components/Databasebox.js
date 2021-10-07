@@ -31,7 +31,10 @@ function Databasebox({ data }) {
             <div className="itembox">
                 <table className="itemboxTable">
                     <tr>
-                        <th colspan="2">Totalt: {TotalEmissions(items)} Kg {dispChart(items)}</th>
+                        <th colspan="2">Total: {TotalEmissions(items)} Kg </th>
+                    </tr>
+                    <tr>
+                        <th colspan="2"> Emission chart{dispChart(items)} </th>
                     </tr>
                     <tr>
                         <th>Product</th>

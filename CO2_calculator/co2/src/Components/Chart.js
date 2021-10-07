@@ -17,9 +17,6 @@ function dispChart(items) {
             chartType="PieChart"
             loader={<div>Loading Chart</div>}
             data={Emissions(items)}
-            options={{
-                title: 'Emission comparison',
-            }}
             rootProps={{ 'data-testid': '1' }}
         />);
 }
