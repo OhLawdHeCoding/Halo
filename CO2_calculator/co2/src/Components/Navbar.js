@@ -1,46 +1,44 @@
-import React, { useState } from 'react';
-import Logo from '../assets/logo.png';
-import { Link } from 'react-router-dom';
-import '../styling/Navbar.css';
-//import ReorderIcon from '@mui/icons-material/Reorder';
-
-
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import Logo from "../assets/logo.png";
+import "../styling/Navbar.css";
 
 function Navbar() {
+  const [menuToggle, setMenuToggle] = useState(false);
+  const showMenu = () => setMenuToggle(!menuToggle);
+  const closeMenu = () => setMenuToggle(false);
 
-    const [openLinks, setOpenLinks] = useState(false);
-
-    const toggleNavbar = () => {
-        setOpenLinks(!openLinks)
-
-    };
-
-    return (
-        <div className='navbar'>
-            <div className='left' id={openLinks ? 'open' : 'close'}>
-                <Link to='/home'><img src={Logo} /></Link>
-                <div className='hiddenLinks'>
-                    <Link to='/'> Home</Link>
-                    <Link to='/about'> About</Link>
-                    <Link to='/donate'> Donate</Link>
-
-                </div>
-            </div>
-            <div className='right'>
-                <Link to='/'> Home</Link>
-                <Link to='/about'> About</Link>
-                <Link to='/donate'> Donate</Link>
-
-            </div>
-
-
-
-
-
+  return (
+    <>
+      <nav className="nav-div">
+        <div className="nav-container">
+          <Link to="/" className="c02-logo" onClick={closeMenu}>
+            <img src={Logo} />
+          </Link>
+          <div className="menu-logo" onClick={showMenu}>
+            <i className={menuToggle ? "fas fa-times" : "fas fa-bars"} />
+          </div>
+          <ul className={menuToggle ? "nav-menu active" : "nav-menu"}>
+            <li className="nav-item">
+              <Link to="/" className="nav-links" onClick={closeMenu}>
+                Home
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/about" className="nav-links" onClick={closeMenu}>
+                About
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/donate" className="nav-links" onClick={closeMenu}>
+                Donate
+              </Link>
+            </li>
+          </ul>
         </div>
-
-
-    );
+      </nav>
+    </>
+  );
 }
 
 export default Navbar;
