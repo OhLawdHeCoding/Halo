@@ -6,6 +6,7 @@ import TotalEmissions from './TotalEmissions';
 import dispCO2 from './DisplayCO2';
 import "../styling/Databasebox.css";
 import dispChart from './Chart';
+import Emissions from './Emissions';
 
 
 
@@ -30,7 +31,7 @@ function Databasebox({ data }) {
             <div className="itembox">
                 <table className="itemboxTable">
                     <tr>
-                        <th colspan="2">Totalt: {TotalEmissions(items)} {dispChart(items)}</th>
+                        <th colspan="2">Totalt: {TotalEmissions(items)} Kg {dispChart(items)}</th>
                     </tr>
                     <tr>
                         <th>Product</th>
