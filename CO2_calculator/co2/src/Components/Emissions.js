@@ -3,7 +3,8 @@
 function Emissions(items) {
 
     var Data = [
-        ['food', 'CO2']
+        ['food', 'CO2'],
+        ['',0]
     ];
     items.reduce((items,item) => 
         Data.push(

@@ -18,7 +18,7 @@ function dispChart(items) {
             loader={<div>Loading Chart</div>}
             data={Emissions(items)}
             options={{
-                title: 'food',
+                title: 'Emission comparison',
             }}
             rootProps={{ 'data-testid': '1' }}
         />);
