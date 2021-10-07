@@ -26,7 +26,7 @@ function Databasebox({ data }) {
             <div className="itembox"> 
             <table>
                 <tr>
-                    <th colspan="2">Totalt: {TotalEmissions(items)} </th>
+                    <th colspan="2">Totalt CO2: {TotalEmissions(items)} Kg</th>
                 </tr>
                 <tr>
                     <th>Product</th>
