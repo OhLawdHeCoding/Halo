@@ -1,4 +1,5 @@
 import Chart from "react-google-charts";
+import Emissions from "./Emissions";
 
 function dispChart(items) {
     //var arr = [];
@@ -15,17 +16,7 @@ function dispChart(items) {
             height={'300px'}
             chartType="PieChart"
             loader={<div>Loading Chart</div>}
-            data={[
-                ['food', 'CO2'],
-                ['schmeat', 11],
-                ['schmeese', 2],
-                ['bread', 2],
-                ['potat', 2],
-                ['borgir', 7]
-            ]}
-            options={{
-                title: 'food',
-            }}
+            data={Emissions(items)}
             rootProps={{ 'data-testid': '1' }}
         />);
 }

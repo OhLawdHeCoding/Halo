@@ -4,8 +4,8 @@ function TotalEmissions(items) {
 
     // Calculates the total emission
     var totalEmissions = items.reduce((totalEmissions, item) => 
-        parseFloat(
-            item.val.MeanC02.replace(/,/g, ".")) * item.portions.reduce((portions, portion) => portion.amount/1000 + portions , 0)
+        parseFloat(item.val.MeanC02.replace(/,/g, ".")) * 
+        item.portions.reduce((portions, portion) => portion.amount/1000 + portions , 0)
         + totalEmissions , 0);
 
     // Rounds the number to two at max decimals and returns
