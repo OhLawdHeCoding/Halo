@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Halo/static/css/main.720c140a.chunk.css",
+    "main.js": "/Halo/static/js/main.23e41cee.chunk.js",
+    "main.js.map": "/Halo/static/js/main.23e41cee.chunk.js.map",
+    "runtime-main.js": "/Halo/static/js/runtime-main.cffe20ae.js",
+    "runtime-main.js.map": "/Halo/static/js/runtime-main.cffe20ae.js.map",
+    "static/js/2.5ed65069.chunk.js": "/Halo/static/js/2.5ed65069.chunk.js",
+    "static/js/2.5ed65069.chunk.js.map": "/Halo/static/js/2.5ed65069.chunk.js.map",
+    "index.html": "/Halo/index.html",
+    "static/css/main.720c140a.chunk.css.map": "/Halo/static/css/main.720c140a.chunk.css.map",
+    "static/js/2.5ed65069.chunk.js.LICENSE.txt": "/Halo/static/js/2.5ed65069.chunk.js.LICENSE.txt",
+    "static/media/aForest.3d728b19.jpg": "/Halo/static/media/aForest.3d728b19.jpg",
+    "static/media/logo.90bfe703.png": "/Halo/static/media/logo.90bfe703.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cffe20ae.js",
+    "static/js/2.5ed65069.chunk.js",
+    "static/css/main.720c140a.chunk.css",
+    "static/js/main.23e41cee.chunk.js"
+  ]
+}
