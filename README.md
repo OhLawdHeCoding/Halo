@@ -1,12 +1,12 @@
 #Projektgrupp Halo
 
-#__Trello__#
+###__Trello__###
 url: https://trello.com/b/sRzNSATB/agile-board
 
-#__Repo Structure and Critical File Relationships__#
-##Documentation:##
-** >Team reflections** can be found under "./Halo/Team Reflections" and are labeled by week
-** > Individual reflections** can be found under "./Halo/individual_reflections/<Name>" and are labeled by week 
+###__Repo Structure and Critical File Relationships__###
+Documentation:
+ > Team reflections can be found under "./Halo/Team Reflections" and are labeled by week
+ > Individual reflections can be found under "./Halo/individual_reflections/<Name>" and are labeled by week 
 
 System: 
  > Original data can be found under "./Halo/Resources"
@@ -34,11 +34,14 @@ System:
 	> <filename>.css handles stylig for <filename>.js
 	> "./styling/" contains all .css files
 	> "./Components/" contains all react components and their helperfunctions.
-		> "Searchbar.js" recieves data.json from "App.js" and renders a searchbar, filters i
- 
+		> "Searchbar.js" recieves data.json from "App.js" and renders a searchbar. It filters data.json based och 
+		    the search and calls "Databasebox.js" with it. 
+		>  "Databasebox.js" Renders most interactive content. 
+		     * It makes the left hand side table with the data and also calls "AddItemButton.js" to populate it with buttons
+		     * It makes the right hand side table with the selected items and calls "IncItemButton.js" and "DecItemButton.js" to populate each portion with buttons.
+		     * It renders the graph and displays the totalCO2. For this, it references "Chart.js" and "TotalEmissions.js"
+		     * Furthermore, anywhere where CO2KG/KG is displayed dispCO2 from "DisplayCO2" is called to colorize.
   > Public files can be found under "./public/", contains files read by the browser on launch
 
-, description how to get to reflections
-Crucial parts of the product system
 
 
