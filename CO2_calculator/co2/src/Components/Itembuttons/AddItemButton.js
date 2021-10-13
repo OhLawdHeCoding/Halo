@@ -7,7 +7,7 @@ AddItemButton har två huvudsakliga uppgifter:
 2. Skapa ett textfält för custom portioner, och skicka den till ovan punkt^
 */
 
-function AddItemButton(val, items, setItems) {
+function AddItemButton(props) {
   //const custom = { name: "", grams: "0" };
   const [custom, setCustom] = React.useState({ name: "", grams: "0" });
   //För att hålla koll på vad som står i textfältet använder jag ett state^
@@ -24,10 +24,10 @@ function AddItemButton(val, items, setItems) {
         </div>
       </div>
       <div>
-        {[...val.val.PortionSize, custom].filter((p) => { if (p.name != "") return true; return false }).map((portion, key) => {
+        {[...props.val.PortionSize, custom].filter((p) => { if (p.name != "") return true; return false }).map((portion, key) => {
           //jag filtrerar bort alla portioner som har ett defualt-namn.
           //Itererar sen över allt som är kvar och returnerar tabellcell "td" med en knapp för varje (kallar PortionSizeButton)
-          return <div className="addButton"><td className="buttonCell" key={key}>{PortionSizeButton(portion, val.val, val.items, val.setItems)}</td></div>
+          return <div className="addButton"><td className="buttonCell" key={key}>{PortionSizeButton(portion, props.val, props.items, props.setItems)}</td></div>
         })}
       </div>
     </div>

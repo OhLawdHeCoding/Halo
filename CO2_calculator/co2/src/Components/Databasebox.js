@@ -38,7 +38,7 @@ function Databasebox({ data }) {
                     </tr>
                     <tr>
                         <th>Product</th>
-                        <th>CO2 Emission</th>
+                        <th>CO2 Emission (kg)</th>
                     </tr>
                     {items.filter((i) => {
                         var all = false;
@@ -59,11 +59,10 @@ function Databasebox({ data }) {
                 <table>
                     <tr>
                         <th>Product</th>
-                        <th>CO2</th>
+                        <th>CO2 (kg/kg)</th>
                     </tr>
                     {data.map((val, key) => {
                         return <tr className="Product" key={key}><td>{val.Product}<AddItemButton val={val} items={items} setItems={setItems}/>
-
                         </td><td>{dispCO2(val.MeanC02)}</td></tr>
                     })}
                 </table>
