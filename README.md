@@ -1,12 +1,12 @@
 #Projektgrupp Halo
 
-###__Trello__###
+#__Trello__#
 url: https://trello.com/b/sRzNSATB/agile-board
 
-###__Repo Structure and Critical File Relationships__##
-Documentation:
- > Team reflections can be found under "./Halo/Team Reflections" and are labeled by week
- > Individual reflections can be found under "./Halo/individual_reflections/<Name>" and are labeled by week 
+#__Repo Structure and Critical File Relationships__#
+##Documentation:##
+** >Team reflections** can be found under "./Halo/Team Reflections" and are labeled by week
+** > Individual reflections** can be found under "./Halo/individual_reflections/<Name>" and are labeled by week 
 
 System: 
  > Original data can be found under "./Halo/Resources"
