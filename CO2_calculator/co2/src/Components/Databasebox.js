@@ -7,6 +7,7 @@ import dispCO2 from './DisplayCO2';
 import "../styling/Databasebox.css";
 import dispChart from './Chart';
 import Emissions from './Emissions';
+import CollapsibleEmissions from './Collapsible';
 
 
 
@@ -26,15 +27,12 @@ function Databasebox({ data }) {
         -In our table a map function maps over all products given to us in 
          this components function call and returns them within rows of cell datas.  
         */
-        <div className="boxes">
 
+        <div className="boxes">
             <div className="itembox">
                 <table className="itemboxTable">
                     <tr>
-                        <th colspan="2">Total: {TotalEmissions(items)} Kg </th>
-                    </tr>
-                    <tr>
-                        <th colspan="2"> Emission chart{dispChart(items)} </th>
+                        <th colspan="2"> {CollapsibleEmissions(items)}  </th>
                     </tr>
                     <tr>
                         <th>Product</th>
@@ -50,7 +48,7 @@ function Databasebox({ data }) {
                             <ul>{item.portions.filter(p => p.amount > 0).map((portionItem, key) => {
                                 return <li key={key}>{portionItem.amount / portionItem.portion.grams}{" x " + portionItem.portion.name}
                                     {IncItemButton(portionItem, item, items, setItems)}{DecItemButton(portionItem, item, items, setItems)}</li>
-                            })}</ul></td><td className="MeanCO2" >{dispCO2(Math.round((parseFloat(item.val.MeanC02.replace(/,/g, ".")) * item.portions.reduce((portions, portion) => portion.amount/1000 + portions, 0) + Number.EPSILON) * 100) / 100)}</td></tr>
+                            })}</ul></td><td className="MeanCO2" >{dispCO2(Math.round((parseFloat(item.val.MeanC02.replace(/,/g, ".")) * item.portions.reduce((portions, portion) => portion.amount / 1000 + portions, 0) + Number.EPSILON) * 100) / 100)}</td></tr>
                     })}
                 </table>
             </div>
@@ -62,7 +60,7 @@ function Databasebox({ data }) {
                         <th>CO2</th>
                     </tr>
                     {data.map((val, key) => {
-                        return <tr className="Product" key={key}><td>{val.Product}<AddItemButton val={val} items={items} setItems={setItems}/>
+                        return <tr className="Product" key={key}><td>{val.Product}<AddItemButton val={val} items={items} setItems={setItems} />
 
                         </td><td>{dispCO2(val.MeanC02)}</td></tr>
                     })}
