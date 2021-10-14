@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../assets/logo.png";
 import "../styling/Navbar.css";
@@ -30,7 +30,7 @@ function Navbar() {
       <nav className="nav-div">
         <div className="nav-container">
           <Link to="/" className="c02-logo" onClick={closeMenu}>
-            <img src={Logo} />
+            <img alt="Co2-logotype" src={Logo} />
           </Link>
           <div className="menu-logo" onClick={showMenu}>
             {/*Checks menuToggle and provide different icon the depending on value*/}
