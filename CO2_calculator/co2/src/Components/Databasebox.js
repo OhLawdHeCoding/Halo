@@ -60,12 +60,8 @@ function Databasebox({ data }) {
                         <th>CO2 (kg/kg)</th>
                     </tr>
                     {data.map((val, key) => {
-<<<<<<< HEAD
                         return <tr className="Product" key={key}><td>{val.Product}<AddItemButton val={val} items={items} setItems={setItems} />
 
-=======
-                        return <tr className="Product" key={key}><td>{val.Product}<AddItemButton val={val} items={items} setItems={setItems}/>
->>>>>>> 6f4ac4b47d3dc3f4479bd7b443e8230f1160cd79
                         </td><td>{dispCO2(val.MeanC02)}</td></tr>
                     })}
                 </table>

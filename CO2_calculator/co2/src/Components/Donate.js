@@ -3,6 +3,7 @@ import Pic from "../assets/aForest.jpg";
 import DonateButton from "../Components/DonateButton";
 import "../styling/Donate.css";
 
+//this file is responsible for the donate page located in App.js
 function Donate() {
   return (
     <div className="donate">

@@ -2,6 +2,7 @@ import React from "react";
 import Pic from "../assets/aForest.jpg";
 import "../styling/About.css";
 
+//this file is responsible for the about page located in App.js
 function About() {
   return (
     <div className="about">

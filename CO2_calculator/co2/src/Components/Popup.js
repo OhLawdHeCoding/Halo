@@ -1,20 +1,30 @@
 import React, { useState } from "react";
 import "../styling/Popup.css";
 
-
+//this file is responsible for the popup help button located in Homepage.js
 
 export default function Popup() {
-  const [popup, setPopup] = useState(false);
+  const [popup, setPopup] = useState(false);//state of popup is false from beginning
 
   const togglePopup = () => {
-    setPopup(!popup);
+    setPopup(!popup);//toggles useState Hook when button is clicked
   };
 
   if(popup) {
-    document.body.classList.add('active-popup')
+    document.body.classList.add('active-popup')//prevent scrolling when popup is open
   } else {
     document.body.classList.remove('active-popup')
   }
+
+  /*
+
+  Clicking the help/close button or the overlay (outside the popup-window)
+  triggers the function togglePopup and changes useState.
+
+  'popup &&' is used to render the popup conditionally.
+  If popup is true, the popup is returned. If not true, nothing is returned. 
+
+  */
 
   return (
     <>
