@@ -1,8 +1,22 @@
 import React from 'react'
+import styled from 'styled-components';
+
+const Button = styled.button`
+background-color: white;
+padding: 10px 5px;
+border-radius: 5px;
+box-shadow: 0px 2px 2px black;
+cursor: pointer;
+font-weight: bold;
+transition: ease background-color 250ms;
+&:hover {
+    background-color: #FFC107;
+}
+`;
 
 function PortionSizeButton(_portion, _val, items, setItems) {
     return (
-        <button className="addButton" onClick={() => setItems(() => {
+        <Button className="addButton" onClick={() => setItems(() => {
             console.log("Add clicked...");
             console.log("ID: " + _val.id);
             console.log("Product: " + _val.Product);
@@ -31,7 +45,7 @@ function PortionSizeButton(_portion, _val, items, setItems) {
                 }
             }
         }
-        )}> {_portion.name + " (" + _portion.grams + "g)"} </button>
+        )}> {_portion.name + " (" + _portion.grams + "g)"} </Button>
     );
 }
 
