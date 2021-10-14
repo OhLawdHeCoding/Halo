@@ -20,10 +20,11 @@
   height: 55%;
   align-items: center;
   margin-top: 50px;
+  text-align: justify;
 }
 
 .aboutBottom p {
-  width: 1200px;
+  width: 600px;
 }
 
 .about .aboutBottom h1 {
@@ -37,22 +38,16 @@
 }
 
 @media only screen and (max-width: 900px) {
-
-
   .aboutBottom p {
-    width: 300px;
+    width: 80%;
   }
 
   .aboutTop {
     height: 30%;
-  
   }
 
   .about .aboutBottom h1 {
     font-size: 50px;
     height: 10px;
-    
   }
-
- 
 }

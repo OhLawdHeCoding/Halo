@@ -20,10 +20,11 @@
   height: 55%;
   align-items: center;
   margin-top: 50px;
+  text-align: justify;
 }
 
 .donateBottom p {
-  width: 1200px;
+  width: 600px;
 }
 
 .donate .donateBottom h1 {
@@ -36,25 +37,17 @@
   transform: translateY(-40px);
 }
 
-@media only screen and (max-width: 900px) {
-
+@media screen and (max-width: 960px) {
   .donateBottom p {
-    width: 300px;
+    width: 80%;
   }
 
   .donateTop {
     height: 30%;
-   
   }
-  
+
   .donate .donateBottom h1 {
     height: 10px;
     font-size: 50px;
-
   }
-
-
-
-
-
 }
