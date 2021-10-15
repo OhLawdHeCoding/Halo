@@ -40,17 +40,17 @@ function Navbar() {
           <ul className={menuToggle ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
               <Link to="/" className="nav-links" onClick={closeMenu}>
-                Home
+                <div className="navbarText">Home</div>
               </Link>
             </li>
             <li className="nav-item">
               <Link to="/about" className="nav-links" onClick={closeMenu}>
-                About
+              <div className="navbarText">About</div>
               </Link>
             </li>
             <li className="nav-item">
               <Link to="/donate" className="nav-links" onClick={closeMenu}>
-                Donate
+              <div className="navbarText">Donate</div>
               </Link>
             </li>
           </ul>
