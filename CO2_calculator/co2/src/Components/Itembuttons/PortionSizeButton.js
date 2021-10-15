@@ -2,12 +2,12 @@ import React from 'react'
 import styled from 'styled-components';
 
 const Button = styled.button`
-background-color: white;
-padding: 10px 5px;
-border-radius: 5px;
-box-shadow: 0px 2px 2px black;
+background-color: #fafafa;
+padding: 0px 5px;
+border-radius: 3px;
+box-shadow: 0px 2px 2px green;
 cursor: pointer;
-font-weight: bold;
+border: none !important;
 transition: ease background-color 250ms;
 &:hover {
     background-color: #FFC107;

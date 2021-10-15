@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Collapsible from 'react-collapsible';
 import TotalEmissions from './TotalEmissions';
 import dispChart from './Chart';
+import '../styling/Collapsable.css';
 
 
 
@@ -16,7 +17,7 @@ function CollapsibleEmissions(items) {
     }
     else {
         return (
-            <Collapsible trigger={TotalEmissions(items) + " Kg"}>
+            <Collapsible trigger={<div className="Collapsable">{TotalEmissions(items) + " Kg"}</div>}>
                 <p>
                     {dispChart(items)}
                 </p>

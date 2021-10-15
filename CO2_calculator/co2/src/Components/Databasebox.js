@@ -44,7 +44,7 @@ function Databasebox({ data }) {
                             all |= element.amount > 0;
                         }); return all
                     }).map((item, key) => {
-                        return <tr className="Product" key={key}><td>{item.val.Product}
+                        return <tr className="Product" key={key}><td><div className="itemBoxProduct">{item.val.Product}</div>
                             <ul>{item.portions.filter(p => p.amount > 0).map((portionItem, key) => {
                                 return <li key={key}>{portionItem.amount / portionItem.portion.grams}{" x " + portionItem.portion.name}
                                     {IncItemButton(portionItem, item, items, setItems)}{DecItemButton(portionItem, item, items, setItems)}</li>
@@ -60,7 +60,7 @@ function Databasebox({ data }) {
                         <th>CO2 (kg/kg)</th>
                     </tr>
                     {data.map((val, key) => {
-                        return <tr className="Product" key={key}><td>{val.Product}<AddItemButton val={val} items={items} setItems={setItems} />
+                        return <tr className="Product" key={key}><td><div className="product">{val.Product}</div><AddItemButton val={val} items={items} setItems={setItems} />
 
                         </td><td>{dispCO2(val.MeanC02)}</td></tr>
                     })}
