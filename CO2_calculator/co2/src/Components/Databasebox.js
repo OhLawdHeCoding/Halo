@@ -49,7 +49,7 @@ function Databasebox({ data }) {
                     <div className="itembox">
                         <table className="itemboxTable">
                             <tr>
-                                <th colspan="2"> <CollapsibleEmissions items={items} />  </th>
+                                <th colspan="2"> {CollapsibleEmissions(items)}  </th>
                             </tr>
                             <tr>
                                 <th>Product</th>
