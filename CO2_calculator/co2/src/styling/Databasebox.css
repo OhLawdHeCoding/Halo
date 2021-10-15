@@ -7,8 +7,8 @@ div.container input[type=text]{
   box-sizing: border-box;
 }
 div.customPortion input[type=text]{
-  width: 30%;
-  padding: 12px 20px;
+  width: 20%;
+  padding: 16px;
   box-sizing: border-box;
   float: left;
 }
@@ -44,6 +44,7 @@ table td, table th {
 }
 div.product {
   padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 div.databasebox table td {

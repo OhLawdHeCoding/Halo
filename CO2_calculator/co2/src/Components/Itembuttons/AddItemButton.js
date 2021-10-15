@@ -16,7 +16,7 @@ function AddItemButton(props) {
     <div>
       <div className="customAddButton">
         <div className="customPortion">
-          <input type="text" placeholder="customValue" onChange={(event) => {
+          <input type="text" placeholder="Custom (g)" onChange={(event) => {
             //skapar direkt en portion utav texten i textfältet och sparar med setCustom
             var _portion = { name: event.target.value, grams: parseInt(event.target.value) }
             setCustom(_portion);
