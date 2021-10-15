@@ -46,8 +46,8 @@ function Databasebox({ data }) {
                     }).map((item, key) => {
                         return <tr className="Product" key={key}><td><div className="itemBoxProduct">{item.val.Product}</div>
                             <ul>{item.portions.filter(p => p.amount > 0).map((portionItem, key) => {
-                                return <li key={key}>{portionItem.amount / portionItem.portion.grams}{" x " + portionItem.portion.name}
-                                    {IncItemButton(portionItem, item, items, setItems)}{DecItemButton(portionItem, item, items, setItems)}</li>
+                                return <div className="portionItem"><li key={key}>{portionItem.amount / portionItem.portion.grams}{" x " + portionItem.portion.name}
+                                    {IncItemButton(portionItem, item, items, setItems)}{DecItemButton(portionItem, item, items, setItems)}</li></div>
                             })}</ul></td><td className="MeanCO2" >{dispCO2(Math.round((parseFloat(item.val.MeanC02.replace(/,/g, ".")) * item.portions.reduce((portions, portion) => portion.amount / 1000 + portions, 0) + Number.EPSILON) * 100) / 100)}</td></tr>
                     })}
                 </table>
