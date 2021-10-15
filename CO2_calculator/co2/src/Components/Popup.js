@@ -48,9 +48,10 @@ export default function Popup() {
               <p>
               On the right hand side of the list you 
               can see your chosen items. To remove an item/decrease the amount of an item, 
-              press -1. Similar, to add more of an item, press +1. 
+              press -1. Similarly, to add more of an item, press +1. 
               
-              <p>Finally, above your list of selected items you can see the total CO2-equivalent in kg and its breakdown in graph.</p>
+              <p>Finally, above your list of selected items you can see the total CO2
+                -equivalent in kg and if you press it, its breakdown in a graph.</p>
 
               </p>
               

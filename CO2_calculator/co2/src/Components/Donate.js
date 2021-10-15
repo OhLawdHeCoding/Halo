@@ -15,13 +15,13 @@ function Donate() {
         <h1>Donate</h1>
         <p>
           One in ten people around the world do not have enough to eat everyday.
-          "Zero Hunger" is one of the 17 Sustainable Devlopment Goals that
+          "Zero Hunger" is one of the UN's 17 Sustainable Devlopment Goals that
           includes a mission aiming at ending all forms of malnutrition by 2030.
           After decades of decline, the number of people suffering from hunger
           began to slowly increase again in 2015. This needs to change!{" "}
           <br></br>
-          <br></br> The World Food Programme are the largest humanitarian
-          organization in the world and provide life-saving food and nutrition
+          <br></br> The World Food Programme is the largest humanitarian
+          organization in the world and provides life-saving food and nutrition
           assistance to people living in poor conditions and in countries
           affected by conflict. There are currently over 810 million people that
           do not have enough food and according to recent estimates, 41 million
@@ -37,8 +37,8 @@ function Donate() {
             The UN World Food Programme is a 100% voluntarily funded
             organization. For every $1 you give, 64 cents goes directly to
             programmes supporting hungry people. Right now, 2 cents is used to
-            process your donation and 6 cents helps run WFP and our programmes.
-            28 cents goes towards raising the next $1 (which under our ten-year
+            process your donation and 6 cents helps run WFP and their programmes.
+            28 cents goes towards raising the next $1 (which under their ten-year
             plan will fall – averaging out at 22 cents between 2020-2030).
           </small>
           <br />

@@ -21,15 +21,15 @@ function About() {
           impact the climate. We have therefore created a Co2-calculator where
           you can search through our database for differents foods and find
           their carbon footprint. You can create your own list of items with the
-          grocerys you plan to use when cooking or while shopping. We believe
+          groceries you plan to use when cooking or while shopping. We believe
           that with further knowledge about what we're eating and how
           environmentally friendly different products are we can drastically
           reduce our footprint only with small changes in our consumption.{" "}
           <br />
-          <br /> The data that we use are collected from 38,700 farms and 1600
+          <br /> The data that we use is collected from 38,700 farms and 1600
           processors. It takes also into account the packaging and retailers and
           the data is then presented as the average gas emission of carbon
-          dioxide equivalents (kgCO₂eq) per kilogram.
+          dioxide equivalents (kgCO₂eq) per kilogram of food.
           <br />
           <br /> With the development of transport systems and a more industrial
           supply structure in recent centuries the link between producers and
