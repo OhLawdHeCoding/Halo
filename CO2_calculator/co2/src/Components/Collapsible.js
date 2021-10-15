@@ -16,7 +16,7 @@ function CollapsibleEmissions(items) {
     }
     else {
         return (
-            <Collapsible trigger={<div className="Collapsable">{TotalEmissions(items) + " Kg CO2 equivalent"}</div>}>
+            <Collapsible trigger={<div className="Collapsable">{TotalEmissions(items) + " Kg CO2 equivalent (click me!)"}</div>}>
                 <p>
                     {dispChart(items)}
                 </p>

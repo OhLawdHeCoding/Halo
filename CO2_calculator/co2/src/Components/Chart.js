@@ -11,7 +11,7 @@ function dispChart(items) {
 
     return (
         <Chart
-            width={'500px'}
+            width={'100%'}
             height={'300px'}
             chartType="PieChart"
             loader={<div>Loading Chart</div>}

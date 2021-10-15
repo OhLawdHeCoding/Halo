@@ -1,5 +1,6 @@
 div.Collapsable:hover{
     transition: ease-in-out 250ms;
+    cursor: pointer;
     color: #FFC107;
     padding-bottom: 2%;
 }
