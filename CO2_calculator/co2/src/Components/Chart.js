@@ -17,6 +17,14 @@ function dispChart(items) {
             loader={<div>Loading Chart</div>}
             data={Emissions(items)}
             rootProps={{ 'data-testid': '1' }}
+            options={{
+                backgroundColor: "#008553",
+                legend:{
+                    textStyle: {
+                        color: "white"
+                    }
+                }
+            }}
         />);
 
 }

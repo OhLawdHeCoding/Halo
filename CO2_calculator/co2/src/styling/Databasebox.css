@@ -93,6 +93,7 @@ div.addButton td.buttonCell{
   border:none;
 }
 div.portionItem button {
+  font-weight: bold;
   background-color: #fafafa;
 padding: 3px 8px;
 border-radius: 3px;
