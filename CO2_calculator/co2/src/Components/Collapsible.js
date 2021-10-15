@@ -7,7 +7,6 @@ import '../styling/Collapsable.css';
 
 
 function CollapsibleEmissions(items) {
-    const [isShown, setIsShown] = useState(false);
     const styles = {
         width: "500px"
     }
