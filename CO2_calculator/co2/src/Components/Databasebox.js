@@ -14,9 +14,9 @@ import CollapsibleEmissions from './Collapsible';
 
 function Databasebox({ data }) {
     const [items, setItems] = React.useState([]);
-    const [active, setActive] = useState(false);
-    const { height, width } = useWindowDimensions();
-    const [isMobile, setMobile] = useState(width < 1001);
+    const [active, setActive] = useState(false); //Used in MobileBoxes.js if active is true we display itembox, otherwise we display databasebox 
+    const { height, width } = useWindowDimensions(); //used to determine width to see if user is on mobile or not. Full hook can be found in GetWindowSize.js
+    const [isMobile, setMobile] = useState(width < 1001); //if width< 1001 we switch to mobile version
 
     /*items:[
         {val:val, portions:[{portion, amount}]}

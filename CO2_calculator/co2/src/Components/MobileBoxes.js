@@ -11,18 +11,22 @@ import Emissions from './Emissions';
 import CollapsibleEmissions from './Collapsible';
 
 
+/*
+This file is currently called from databasebox (32)
+This file is used as a substitute for Databasebox and is called when ismobile is true when the page reloads.
+When called, the file first shows the databasebox on the entire screen and then show itembox instead if a button is pressed.
+*/
 function MobileBoxes(items, setItems, data, active, setActive, isMobile, setMobile) {
 
-    if (active) {
+    //active is a const we get from Databasebox and swap when we press the "TabButton"
+    if (active) { //if active is true we display itembox, otherwise we display databasebox          
         return (
             <div>
-                <button className="TabButton" onClick={() =>
+                <button className="TabButton" onClick={() => //switches tabs
                     setActive(!active)
                 }>switch tab
                 </button>
                 <div className="itemboxMobile">
-
-
                     <table className="itemboxTable">
                         <tr>
                             <th colspan="2"> {CollapsibleEmissions(items)}  </th>
@@ -51,7 +55,7 @@ function MobileBoxes(items, setItems, data, active, setActive, isMobile, setMobi
     } else {
         return (
             <div>
-                <button className="TabButton" onClick={() =>
+                <button className="TabButton" onClick={() => //switches tabs
                     setActive(!active)
                 }>switch tab
                 </button>

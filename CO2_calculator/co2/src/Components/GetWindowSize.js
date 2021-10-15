@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 
 //Copied from stackoverflow.
+//used to get screenwidth in databasebox to determine whether to call the phone or desktop version
 
 function getWindowDimensions() {
     const { innerWidth: width, innerHeight: height } = window;
