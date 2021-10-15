@@ -14,7 +14,7 @@ import CollapsibleEmissions from './Collapsible';
 
 function Databasebox({ data }) {
     const [items, setItems] = React.useState([]);
-    const [active, setActive] = useState(true);
+    const [active, setActive] = useState(false);
     const { height, width } = useWindowDimensions();
     const [isMobile, setMobile] = useState(width < 1001);
 

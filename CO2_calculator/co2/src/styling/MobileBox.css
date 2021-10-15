@@ -1,0 +1,117 @@
+
+
+div.container input[type=text]{
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+div.customPortion input[type=text]{
+  width: 20%;
+  padding: 16px;
+  box-sizing: border-box;
+  float: left;
+}
+
+div.boxes button {
+  float: right;
+  font-size: 10px;
+}
+div.addButton td{
+  float: right;
+}
+div.addButton button{
+  float: right;
+  font-size: 16px;
+  height: 40px;
+}
+div.itemboxMobile table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  float: right;
+}
+div.databaseboxMobile table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  float: left;
+}
+
+table td, table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+div.product {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+div.databaseboxMobile table td {
+  padding: 0px;
+}
+div.databaseboxMobile table td {
+  padding: 0px;
+}
+
+table tr:nth-child(even){background-color: #f2f2f2;}
+
+div.itemboxMobile table tr:hover div.itemBoxProduct{
+  font-weight: bold;
+}
+
+div.itemboxMobile table tr:hover {
+  transition: background-color 500ms;
+  background-color: #ddd;
+}
+div.databaseboxMobile table tr:hover {
+  transition: background-color 500ms, font-weight 0ms;
+  background-color: #4dca9c;
+  font-weight: bold;
+}
+
+div.itemboxMobile table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #008553;
+  color: white;
+}
+div.databaseboxMobile table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+  transition: ease background-color 250ms;
+}
+
+div.addButton td.buttonCell{
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border:none;
+}
+div.portionItem button {
+  font-weight: bold;
+  background-color: #fafafa;
+padding: 3px 8px;
+border-radius: 3px;
+box-shadow: 0px 2px 2px green;
+cursor: pointer;
+border: none !important;
+transition: ease background-color 250ms;
+}
+div.portionItem button:hover {
+    background-color: #FFC107;
+}
+
+
+@media only screen and (max-width: 900px) {
+
+  div.customPortion input[type=text]{
+    width: 100%;
+    
+  }
+
+}

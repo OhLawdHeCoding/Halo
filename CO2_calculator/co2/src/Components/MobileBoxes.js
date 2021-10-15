@@ -5,7 +5,7 @@ import AddItemButton from './Itembuttons/AddItemButton';
 import React, { useState } from 'react';
 import TotalEmissions from './TotalEmissions';
 import dispCO2 from './DisplayCO2';
-import "../styling/Databasebox.css";
+import "../styling/MobileBox.css";
 import dispChart from './Chart';
 import Emissions from './Emissions';
 import CollapsibleEmissions from './Collapsible';
@@ -20,7 +20,7 @@ function MobileBoxes(items, setItems, data, active, setActive, isMobile, setMobi
                     setActive(!active)
                 }>switch tab
                 </button>
-                <div className="itembox">
+                <div className="itemboxMobile">
 
 
                     <table className="itemboxTable">
@@ -56,7 +56,7 @@ function MobileBoxes(items, setItems, data, active, setActive, isMobile, setMobi
                 }>switch tab
                 </button>
 
-                <div className="databasebox">
+                <div className="databaseboxMobile">
 
                     <table>
 
