@@ -44,7 +44,8 @@ function Databasebox({ data }) {
             */
 
 
-            <div className="boxes">
+            <div className="boxes" >
+                
                 <div>
                     <div className="itembox">
                         <table className="itemboxTable">
