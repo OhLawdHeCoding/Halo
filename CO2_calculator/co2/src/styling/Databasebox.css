@@ -13,6 +13,7 @@ div.customPortion input[type=text]{
   float: left;
 }
 
+
 div.boxes button {
   float: right;
   font-size: 10px;
@@ -34,8 +35,16 @@ div.itembox table {
 div.databasebox table {
   font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
-  width: 49.9%;
+  width: 100%;
   float: left;
+  
+}
+div.databasebox{
+  width: 49.9%;
+  height: 100vh;
+  overflow:auto;
+  scrollbar-base-color:gold;
+  
 }
 
 table td, table th {

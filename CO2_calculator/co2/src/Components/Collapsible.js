@@ -11,10 +11,10 @@ function CollapsibleEmissions(items) {
         width: "500px"
     }
     //const a = 1;
-    if (items.length == 0) {
+    if (items.length == 0) { // If the list is is empty, we do not return a chart since it would be empty
         return;
     }
-    else {
+    else { // If the list is non empty a chart is returned with a collapsible button that takes the title of value of total emissions
         return (
             <Collapsible trigger={<div className="Collapsable">{TotalEmissions(items) + " Kg CO2 equivalent (click me!)"}</div>}>
                 <p>
