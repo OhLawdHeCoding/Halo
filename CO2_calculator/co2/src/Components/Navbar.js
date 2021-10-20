@@ -53,6 +53,11 @@ function Navbar() {
               <div className="navbarText">Donate</div>
               </Link>
             </li>
+            <li className="nav-item">
+              <Link to="/login" className="nav-links" onClick={closeMenu}>
+              <div className="navbarText">Sign In</div>
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>
