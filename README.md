@@ -31,6 +31,7 @@ System:
 		> "./Components/Homepage.js"
 		> "./Components/About.js"
 		> "./Components/Donate.js"
+		> "./Components/Login.js"
 	> <filename>.css handles stylig for <filename>.js
 	> "./styling/" contains all .css files
 	> "./Components/" contains all react components and their helperfunctions.
