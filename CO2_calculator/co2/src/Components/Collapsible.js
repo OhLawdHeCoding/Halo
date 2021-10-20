@@ -8,7 +8,7 @@ import '../styling/Collapsable.css';
 
 function CollapsibleEmissions(items) {
     const styles = {
-        width: "500px"
+        //width: "500px"
     }
     //const a = 1;
     if (items.length == 0) { // If the list is is empty, we do not return a chart since it would be empty
