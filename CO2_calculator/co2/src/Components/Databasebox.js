@@ -10,6 +10,7 @@ import Emissions from './Emissions';
 import MobileBoxes from './MobileBoxes';
 import useWindowDimensions from './GetWindowSize.js';
 import CollapsibleEmissions from './Collapsible';
+import ClearButton from './ClearButton';
 
 
 function Databasebox({ data }) {
@@ -53,7 +54,7 @@ function Databasebox({ data }) {
                                 <th colspan="2"> {CollapsibleEmissions(items)}  </th>
                             </tr>
                             <tr>
-                                <th>Product</th>
+                                <th>Product {ClearButton(items, setItems)}</th>
                                 <th>CO2 Emission (kg)</th>
                             </tr>
                             {items.filter((i) => {
