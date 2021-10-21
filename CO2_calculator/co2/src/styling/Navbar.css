@@ -40,9 +40,8 @@
   margin-right: 2rem;
 }
 
-.nav-item {
-  height: 130px;
-}
+
+
 
 .nav-links {
   color: #fff;
@@ -70,7 +69,9 @@
   display: none;
 }
 div.navbarText{
-  padding-top: 60%;
+  padding-top: 5px;
+  height: 50px;
+  
 }
 
 @media screen and (max-width: 960px) {
@@ -142,3 +143,11 @@ div.navbarText{
     transition: all 0.3s ease-out;
   }
 }
+
+
+
+
+
+
+
+

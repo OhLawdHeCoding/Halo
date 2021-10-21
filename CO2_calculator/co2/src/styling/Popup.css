@@ -55,3 +55,27 @@ body.active-popup {
   right: 10px;
   padding: 5px 7px;
 }
+
+@media screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1600px) 
+  { 
+    .popup, .overlay {
+      height: 120vh;
+    }
+}
+
+@media screen and (max-width: 900px) 
+  { 
+    .popup, .overlay {
+      height: 120vh;
+    }
+
+    .popup-content {
+      min-width: 350px;
+
+     
+    }
+
+    
+  }
