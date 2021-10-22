@@ -141,9 +141,13 @@ div.addButton td.buttonCell{
   border:none;
   float: right;
 }
+div.portionItem li {
+  padding-top: 5px;
+}
 div.portionItem button {
   font-weight: bold;
   background-color: #fafafa;
+  float: right;
 padding: 3px 8px;
 border-radius: 3px;
 box-shadow: 0px 2px 2px green;
