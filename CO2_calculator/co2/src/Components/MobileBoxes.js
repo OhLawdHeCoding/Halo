@@ -22,9 +22,13 @@ function MobileBoxes(items, setItems, data, active, setActive, isMobile, setMobi
     if (active) { //if active is true we display itembox, otherwise we display databasebox          
         return (
             <div>
-                <button className="TabButton" onClick={() => //switches tabs
-                    setActive(!active)
-                }>switch tab
+                <button className="InactiveTab" onClick={() => //switches tabs
+                    setActive(false)
+                }>Database
+                </button>
+                <button className="ActiveTabItem" onClick={() => //switches tabs
+                    setActive(true)
+                }>List
                 </button>
                 <div className="itemboxMobile">
                     <table className="itemboxTable">
@@ -55,9 +59,13 @@ function MobileBoxes(items, setItems, data, active, setActive, isMobile, setMobi
     } else {
         return (
             <div>
-                <button className="TabButton" onClick={() => //switches tabs
-                    setActive(!active)
-                }>switch tab
+                <button className="ActiveTabData" onClick={() => //switches tabs
+                    setActive(false)
+                }>Database
+                </button>
+                <button className="InactiveTab" onClick={() => //switches tabs
+                    setActive(true)
+                }>List
                 </button>
 
                 <div className="databaseboxMobile">

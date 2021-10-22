@@ -1,3 +1,41 @@
+button.ActiveTabData{
+  font-weight: bold;
+  color: white;
+  background-color: #04AA6D;
+  padding: 3px 8px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  box-shadow: 0px 2px 2px #04AA6D;
+  cursor: pointer;
+  border: none !important;
+  transition: ease background-color 250ms;
+}
+button.ActiveTabItem{
+  font-weight: bold;
+  color: white;
+  background-color: #008553;
+  padding: 3px 8px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  box-shadow: 0px 2px 2px #008553;
+  cursor: pointer;
+  border: none !important;
+  transition: ease background-color 250ms;
+}
+button.InactiveTab{
+  font-weight: bold;
+  background-color: #fafafa;
+  padding: 3px 8px;
+  border-radius: 3px;
+  box-shadow: 0px 2px 2px green;
+  cursor: pointer;
+  border: none !important;
+  transition: ease background-color 250ms;
+}
+
+
+
+
 
 
 div.container input[type=text]{
@@ -91,6 +129,7 @@ div.addButton td.buttonCell{
   padding-top: 5px;
   padding-bottom: 5px;
   border:none;
+  float: right;
 }
 div.portionItem button {
   font-weight: bold;
