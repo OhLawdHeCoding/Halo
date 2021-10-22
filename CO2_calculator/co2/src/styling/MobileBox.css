@@ -2,7 +2,7 @@ button.ActiveTabData{
   font-weight: bold;
   color: white;
   background-color: #04AA6D;
-  padding: 3px 8px;
+  padding: 13px 13px;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   box-shadow: 0px 2px 2px #04AA6D;
@@ -14,7 +14,7 @@ button.ActiveTabItem{
   font-weight: bold;
   color: white;
   background-color: #008553;
-  padding: 3px 8px;
+  padding: 13px 35px;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   box-shadow: 0px 2px 2px #008553;
@@ -22,12 +22,22 @@ button.ActiveTabItem{
   border: none !important;
   transition: ease background-color 250ms;
 }
-button.InactiveTab{
+button.InactiveTabData{
   font-weight: bold;
   background-color: #fafafa;
-  padding: 3px 8px;
+  padding: 13px 35px;
   border-radius: 3px;
-  box-shadow: 0px 2px 2px green;
+  box-shadow: 0px 2px 2px #04AA6D;
+  cursor: pointer;
+  border: none !important;
+  transition: ease background-color 250ms;
+}
+button.InactiveTabItem{
+  font-weight: bold;
+  background-color: #fafafa;
+  padding: 13px 13px;
+  border-radius: 3px;
+  box-shadow: 0px 2px 2px #008553;
   cursor: pointer;
   border: none !important;
   transition: ease background-color 250ms;
