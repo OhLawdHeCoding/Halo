@@ -41,8 +41,8 @@ function DecItemButton(_portionItem, _item, items, setItems) {
       var itemsIndex = items.findIndex(item => item.val.id === _item.val.id)
       console.log("itemsIndex: " + itemsIndex);
 
-      var portionIndex = items[itemsIndex].portions.findIndex(portionItem => portionItem.portion.name == _portionItem.portion.name);
-      if (portionIndex != -1) { //safe-guard mot att funktionen executar 2 ggr.
+      var portionIndex = items[itemsIndex].portions.findIndex(portionItem => portionItem.portion.name === _portionItem.portion.name);
+      if (portionIndex !== -1) { //safe-guard mot att funktionen executar 2 ggr.
         console.log("portionIndex: " + portionIndex);
         console.log(items[itemsIndex].portions);
         var oldAmount = items[itemsIndex].portions[portionIndex].amount; //items[{val, [{PortionSize, ->COUNT<-}]}]

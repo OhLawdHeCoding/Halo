@@ -4,7 +4,7 @@ import Emissions from "./Emissions";
 function dispChart(items) {
 
 
-    if (items.length == 0) {
+    if (items.length === 0) {
         return (": Add items to display chart");
     }
 

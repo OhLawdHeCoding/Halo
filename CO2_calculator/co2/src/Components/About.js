@@ -1,9 +1,6 @@
 import React from "react";
 import Pic from "../assets/aForest.jpg";
 import "../styling/About.css";
-import { Link } from "react-router-dom";
-
-
 
 //this file is responsible for the about page located in App.js
 function About() {
@@ -39,19 +36,24 @@ function About() {
           for better climate.
           <br />
           <br />
-          <p style={{fontSize: '80%'}}>
-          <small>
-          Data: Poore, J. and Nemecek, T. (2018). Reducing food’s environmental impacts through producers and consumers. 
-           Science, [online] 360(6392), pp.987–992. <td onClick={() => 
-            window.open('https://science.sciencemag.org/content/360/6392/987')}>
-              https://science.sciencemag.org/content/360/6392/987
-            </td>
-          </small>
+          <p style={{ fontSize: "80%" }}>
+            <small>
+              Data: Poore, J. and Nemecek, T. (2018). Reducing food’s
+              environmental impacts through producers and consumers. Science,
+              [online] 360(6392), pp.987–992.{" "}
+              <td
+                onClick={() =>
+                  window.open(
+                    "https://science.sciencemag.org/content/360/6392/987"
+                  )
+                }
+              >
+                https://science.sciencemag.org/content/360/6392/987
+              </td>
+            </small>
           </p>
           <br />
-         
         </p>
-       
       </div>
     </div>
   );

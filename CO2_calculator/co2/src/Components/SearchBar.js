@@ -14,7 +14,7 @@ function SearchBar({ placeholder, data }) {
 
             </div> 
             <div className="data"><Databasebox data={data.filter((val)=>{//Databasebox takes the filtered data and displays it in a table
-                            if (searchTerm == ""){
+                            if (searchTerm === ""){
                                 return val
                             } else if (val.Product.toLowerCase().concat(val.Tags).includes(searchTerm.toLowerCase()))
                                 return val

@@ -24,7 +24,7 @@ function AddItemButton(props) {
         </div>
       </div>
       <div>
-        {[...props.val.PortionSize, custom].filter((p) => { if (p.name != "") return true; return false }).map((portion, key) => {
+        {[...props.val.PortionSize, custom].filter((p) => { if (p.name !== "") return true; return false }).map((portion, key) => {
           //jag filtrerar bort alla portioner som har ett defualt-namn.
           //Itererar sen över allt som är kvar och returnerar tabellcell "td" med en knapp för varje (kallar PortionSizeButton)
           return <div className="addButton"><td className="buttonCell" key={key}>{PortionSizeButton(portion, props.val, props.items, props.setItems)}</td></div>

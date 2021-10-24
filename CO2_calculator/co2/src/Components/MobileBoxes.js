@@ -1,13 +1,9 @@
-import react from "react";
+import React from 'react';
 import IncItemButton from './Itembuttons/IncItemButton';
 import DecItemButton from './Itembuttons/DecItemButton';
 import AddItemButton from './Itembuttons/AddItemButton';
-import React, { useState } from 'react';
-import TotalEmissions from './TotalEmissions';
 import dispCO2 from './DisplayCO2';
 import "../styling/MobileBox.css";
-import dispChart from './Chart';
-import Emissions from './Emissions';
 import CollapsibleEmissions from './Collapsible';
 
 

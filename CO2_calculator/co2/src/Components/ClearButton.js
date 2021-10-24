@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 function ClearButton (items, setItems){
     if (items.length>0)

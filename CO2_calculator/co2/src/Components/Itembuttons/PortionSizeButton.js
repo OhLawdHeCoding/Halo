@@ -27,7 +27,7 @@ function PortionSizeButton(_portion, _val, items, setItems) {
                 return [...items, { val: _val, portions: [{ portion: _portion, amount: _portion.grams }] }];
             }
             else {
-                var portionIndex = items[itemsIndex].portions.findIndex(portionItem => portionItem.portion.name == _portion.name);
+                var portionIndex = items[itemsIndex].portions.findIndex(portionItem => portionItem.portion.name === _portion.name);
                 if (portionIndex === -1) {
                     console.log(items[itemsIndex].portions);
                     items[itemsIndex].portions.push({ portion: _portion, amount: _portion.grams});
