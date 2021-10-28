@@ -1,0 +1,1 @@
+This week there wasn't much to do. Mostly optimizations and bug fixes. We recieved feedback from multiple third parties which was very positive. They only only suggested some minor fixes to the website. All in all an easy sprint. 
