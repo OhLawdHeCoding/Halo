@@ -5,6 +5,7 @@
 \usepackage{blindtext}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx} 
+\usepackage{titlepic}
 \usepackage{array}
 \usepackage{verbatim}
 \usepackage{hyperref}
@@ -20,13 +21,17 @@
 
 \newacronym{md-407}{MD-407}{En ARM-baserad laborationsdator för utbildning}
 
+
 \title{\textbf{Halo}\\ \large A CO2 calculator for food\\TKDAT - DAT257 / DIT257}
-\author{Joar Forsberg, Sebastian Hermansson, Aziz Ibrahim \and Johan Jiremalm, Malte Landgren, Jakob Ståhl}
+\author{Aziz Ibrahim, Jakob Ståhl, Joar Forsberg \and Johan Jiremalm, Malte Landgren,  Sebastian Hermansson}
 
 \date{\today}
-
+\titlepic{
+    \includegraphics[width=\textwidth]{figures/FrontPage.PNG}
+}
 
 \begin{document}
+
 % Inga sidnumreringar här
 \pagenumbering{gobble}
 
@@ -42,7 +47,6 @@
 \newpage
 \input{sections/Introduction.tex}
 
-\newpage
 \input{sections/4perspectives.tex}
 
 \newpage
