@@ -9,8 +9,9 @@ Documentation:
  > Individual reflections can be found under "./Halo/individual_reflections/<Name>" and are labeled by week 
  > Social contract can be found here "./Halo/Socialt kontrakt, Agile projektkurs.pdf"
  > KPI information can be found here "./Halo/KPI.pdf"
- > Spent hours can be found here "..."
- > Project and product scope can be found under "./Halo/ProjectScope/" 
+ > Spent hours can be found here "./Halo/Timräkning Agile Halo.pdf"
+ > Project and product scope can be found under "./Halo/ProjectScope/"
+ > The Final Report can be found under "./Halo/LaTex/Final Report.pdf" 
 
 System: 
  > Original data can be found under "./Halo/Resources"
