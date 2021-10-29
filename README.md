@@ -1,4 +1,6 @@
 #Projektgrupp Halo
+###__Repo__###
+url: https://github.com/OhLawdHeCoding/Halo
 
 ###__Trello__###
 url: https://trello.com/b/sRzNSATB/agile-board
