@@ -1,0 +1,21 @@
+•
+  Jag vill fortsätta lära mig mer om css och att göra hemsidan mer mobilvänlig.
+  Vill också läsa på om UN’s mål som detta projektet arbetar med att lyfta fram, Zero Hunger.
+	A->B: Söka sig fram på nätet och bl.a. hitta andra med liknande projekt.
+  Samt ha dialog med gruppen då man kan reflektera över vilka alternativ som är bäst. 
+•  
+  Likt föregående veckor i stort sett. Det vill säga kontakt via discord.
+  Efter att jag pushat kod så skrev jag i gruppchatten direkt så gruppen vet vad för push jag gjorde. 
+
+•
+  Det jag bidragit med till användandet av scrum är även det likt föregående vecka.
+  Chatt för att diskutera olika tillvägagångssätt och sedan team-reflection möte på
+  söndagen för att gå igenom veckan och komma på nya tasks och sätta effort points på 
+  dem till kommande vecka. Mycket av scrum-arbetet skulle jag säga också är under veckan inom
+  gruppen om två som jobbar med uppgifterna.
+
+• 
+  Fixade navigationsbaren högst upp på sidan med en fungerande mobilversion. Adderade css
+  för bl.a. lite hover-effekter över länkknapparna, la till så att ”mobilmeny-knappen”
+  ändrar bild när den är öppen/stängd och minskade logon. Mobilversionen ser fortfarande
+  lite dålig ut på vissa mobilskärmar. Det är något jag gärna vill förbättra under kommande vecka.

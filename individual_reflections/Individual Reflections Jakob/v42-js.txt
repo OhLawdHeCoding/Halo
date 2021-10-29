@@ -1,0 +1,19 @@
+•
+  Detta var ett första projekt där jag arbetat i grupp med användande av scrum-metoden. Det har
+  varit lärorikt med många nya tekniker inom projektet och även inom arbetsmetoden. För att i
+  framtiden kunna bli bättre, både för egen del och att gruppens resultat är bättre är det nog
+  viktigt att fortsätta använda det så blir man mer van. 
+
+•
+  Via Team reflection och sprint review och kontakt i gruppchatten. 
+  
+•
+  Det jag gjort för att bidra till användandet av ’scrum’ var att vara aktiv i chatten och bidrog
+  till team reflection och sprint review-mötet.  
+  
+•
+  På föregående sprint-review så skrevs nya user stories och tasks men vi assignade dem inte
+  så alla hade fritt fram att ta sig an en uppgift. Jag arbetade med två utav ”buggarna”
+  vilket hade med att förbättra och justera css’en. Andras justeringar användes så det som 
+  jag bidrog till repot var att kolla igenom alla filernas kod och justera så att kompileringsvarningarna
+  försvann. 

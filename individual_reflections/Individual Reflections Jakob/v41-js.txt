@@ -1,0 +1,20 @@
+•
+  Vill hitta bättre react-lösningar för att se om det går förbättra viss kod på en del ställen.
+  Även om det funkar så är det alltid så att det finns det bra och dåliga lösningar. Jag vet att
+  det finns en del buggar vi behöver lösa också som jag ska hjälpa till med och försöka rätta till. 
+
+•
+  Det är lärorikt att gå igenom föregående sprint på sprint review och även under team reflection
+  då man delar med sig av vad man gjort och vad man lärt sig. Dels inom projektet där kod tillkommit
+  som vi går igenom men också i arbetet med scrum där vi lär oss och försöker förbättra det agila arbetssättet. 
+
+•
+  Jag har varit med på Sprint review och deltagit i discord-chatten. Blev tyvärr bara halva mötet
+  (deltog på större delen av sprint review men missade team reflection) då jag fick problem med
+  internet. Det tog jag igen dagen efter genom att gruppen uppdaterade mig och gick igenom trello-
+  board och SR och TR - dokumenten. 
+  
+•
+  Jag skrev texter om projektet på två sidor av hemsidan. Läste om datan som vi använder oss utav och om
+  UNs mål ’Zero hunger’. Jag justerade text-layouten på dessa sidor. Jag la även till kommentarer i
+  koden i de filer jag varit med och skrivit. 
