@@ -10,6 +10,7 @@ Documentation:
  > Social contract can be found here "./Halo/Socialt kontrakt, Agile projektkurs.pdf"
  > KPI information can be found here "./Halo/KPI.pdf"
  > Spent hours can be found here "..."
+ > Project and product scope can be found under "./Halo/ProjectScope/" 
 
 System: 
  > Original data can be found under "./Halo/Resources"

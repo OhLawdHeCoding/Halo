@@ -1,0 +1,60 @@
+\documentclass[a4paper]{article}
+
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{blindtext}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx} 
+\usepackage{array}
+\usepackage{verbatim}
+\usepackage{hyperref}
+\usepackage{subcaption}
+\usepackage[acronym, toc]{glossaries}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{caption}
+\usepackage[titletoc, title]{appendix}
+\usepackage{float}
+
+\makeglossaries
+\newacronym{ide}{IDE}{Integrated Development Environment}
+
+\newacronym{md-407}{MD-407}{En ARM-baserad laborationsdator för utbildning}
+
+\title{\textbf{Halo}\\ \large A CO2 calculator for food\\TKDAT - DAT257 / DIT257}
+\author{Joar Forsberg, Sebastian Hermansson, Aziz Ibrahim \and Johan Jiremalm, Malte Landgren, Jakob Ståhl}
+
+\date{\today}
+
+
+\begin{document}
+% Inga sidnumreringar här
+\pagenumbering{gobble}
+
+\maketitle
+\newpage
+
+\tableofcontents
+\newpage
+
+% Börja med sidnumrering
+\pagenumbering{arabic}
+ 
+\newpage
+\input{sections/Introduction.tex}
+
+\newpage
+\input{sections/4perspectives.tex}
+
+\newpage
+\input{sections/Discussion.tex}
+
+%\newpage
+\addcontentsline{toc}{section}{References}
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+%\newpage
+\pagenumbering{Roman}
+
+
+\end{document}
