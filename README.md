@@ -7,6 +7,9 @@ url: https://trello.com/b/sRzNSATB/agile-board
 Documentation:
  > Team reflections can be found under "./Halo/Team Reflections" and are labeled by week
  > Individual reflections can be found under "./Halo/individual_reflections/<Name>" and are labeled by week 
+ > Social contract can be found here "./Halo/Socialt kontrakt, Agile projektkurs.pdf"
+ > KPI information can be found here "./Halo/KPI.pdf"
+ > Spent hours can be found here "..."
 
 System: 
  > Original data can be found under "./Halo/Resources"
