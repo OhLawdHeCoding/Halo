@@ -14,6 +14,12 @@ Documentation:
  > The Final Report can be found under "./Halo/LaTex/Final Report.pdf" 
 
 ###__How to run__###
+url: https://ohlawdhecoding.github.io/Halo/
+dev-server: 
+ 1. install Node.js
+ 2. navigate to ./Halo/CO2_calculator/co2 in a terminal
+ 3. run "npm install"
+ 4. run "npm start". Defualt hosted on localhost:3000
 
 
 System: 
