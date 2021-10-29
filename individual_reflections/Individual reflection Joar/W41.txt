@@ -1,0 +1,1 @@
+Another slow week. Some members of the team has been optimizing the mobile version of the homepage, but I was not one of them. We've been discussing the structure of the final report and have begun writing a simlpe draft. Some bugs have been squashed. Not a lot of agile processes have been used these last couple of weeks since we are mostly done, so all in all, not much to say. 
