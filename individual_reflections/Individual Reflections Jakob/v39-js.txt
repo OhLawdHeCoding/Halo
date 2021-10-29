@@ -1,0 +1,22 @@
+	•	
+    Har skrivit css hittills i projektet, men relativt lite. 
+    Kommande sprint vill jag veta hur man gör hemsidor mer fungerande för mobiler och olika
+    storlekar på skärmar- genom css. Dit når jag genom att bl.a. hitta andra projekt och
+    googla sig fram. Görs som tidigare i grupp om 2, så samarbete genom att skicka och
+    ta emot länkar och tips via discord.   
+	•	
+    Det sker ständig kontakt via meddelanden.
+    På så sätt lär man ut saker, och även lär sig av de andra gruppmedlemmarna. 
+    Det kan vara bra att efter en push ha som rutin att skriva vad man gjort och hur man tänkte-
+    och om jag fick infon från någonstans kan även en länk postas. Att ta hjälp oftare hade varit bra.
+	•	
+    Jag har varit med på våra gruppmöten återigen under föregående vecka och delaktig i skapandet
+    av nya tasks i vårat agile- board. Estimerande av effort points och valt ut vad man ska fokusera på under veckan. 
+    
+	•	
+    Under veckan så hade jag och min pair programmer tre tasks varav två avklarades första dagen.
+    Den tredje uppgiften var att färgsätta variabler i vår tabell som tar in json-data utifrån
+    värdet på variabeln. Det behövde jag hjälp med då jag inte fick till den helt korrekt. Att fråga om
+    hjälp kan göras bättre framöver genom att kontakta gruppen tidigare istället för att sitta timme 
+    efter timme och försöka själva. Dessutom kan det vara bra att beskriva problemet tydligare och
+    visa mer vad man försökt så att gruppen kan bli mer investerad i uppgiften och vilja hjälpa. 
