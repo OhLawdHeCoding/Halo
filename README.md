@@ -13,6 +13,9 @@ Documentation:
  > Project and product scope can be found under "./Halo/ProjectScope/"
  > The Final Report can be found under "./Halo/LaTex/Final Report.pdf" 
 
+###__How to run__###
+
+
 System: 
  > Original data can be found under "./Halo/Resources"
 	> "aaq0216_datas2.xls" 	- Original data, excel file. Source: https://www.science.org/doi/abs/10.1126/science.aaq0216
